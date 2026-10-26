@@ -1,0 +1,26 @@
+{% extends "posters/_base.html" %}
+{# Giant vertical word behind the product, two-tone background (ref: "Matcha / Today's Special") #}
+{% block style %}
+body{background:var(--l)}
+.panel{right:0;top:0;width:{{ (W*0.44)|int }}px;height:100%;background:var(--p)}
+.word{left:{{ (W - W*0.44/2)|int }}px;top:50%;transform:translate(-50%,-50%) rotate(90deg);transform-origin:center;
+  font-family:{% if big_word_latin %}'Anton','Bebas Neue',sans-serif{% else %}'Anek Bangla',sans-serif{% endif %};
+  font-weight:800;line-height:.84;color:var(--l);white-space:nowrap;letter-spacing:{{ 4 if big_word_latin else 0 }}px;opacity:.92}
+.label{left:70px;top:90px;color:var(--d);width:{{ (W*0.50)|int }}px}
+.label .k{font-family:'Tiro Bangla','Noto Serif Bengali',serif;font-size:34px;line-height:1.3;max-width:{{ (W*0.48)|int }}px}
+.label .h{font-weight:800;font-size:{{ 74 if (headline|length) < 16 else 60 }}px;line-height:1.12;margin-top:8px;max-width:{{ (W*0.52)|int }}px}
+.label .wave{margin-top:16px;width:190px;height:14px;background:repeating-linear-gradient(90deg, var(--d) 0 8px, transparent 8px 12px);opacity:.6;border-radius:6px}
+.hero{left:{{ (W*0.10)|int }}px;top:{{ (H*0.30)|int }}px;width:{{ (W*0.66)|int }}px;height:{{ (H*0.56)|int }}px;object-fit:contain}
+.feat{left:70px;bottom:70px;color:var(--d);font-weight:600;font-size:30px;line-height:1.55}
+.feat div:before{content:"● ";color:var(--p)}
+.call{left:70px;bottom:{{ 70 + 150 }}px;background:var(--d);color:#fff;padding:14px 30px;font-size:34px}
+.call .ph{font-family:'Poppins';font-weight:700}
+{% endblock %}
+{% block body %}
+<div class="abs panel"></div>
+<div class="abs word"><span data-fit="{{ (H*0.86)|int }}" data-fit-max="{{ (W*0.40)|int }}">{{ big_word }}</span></div>
+<div class="abs label">{% if sub %}<div class="k">{{ sub }}</div>{% endif %}<div class="h">{{ headline }}</div><div class="wave"></div></div>
+<img class="abs hero shadow" src="{{ product|img }}">
+{% if phone %}<div class="abs pill call">📞 <span class="ph">{{ phone }}</span></div>{% endif %}
+<div class="abs feat">{% for f in features[:3] %}<div>{{ f }}</div>{% endfor %}</div>
+{% endblock %}

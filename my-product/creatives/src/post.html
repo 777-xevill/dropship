@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--ink:#1d2b2a;--teal:#0f5c57;--teal2:#14796f;--cream:#f7f1e8;--coral:#e8573f;--gold:#f4c35a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{font-family:'Hind Siliguri','Nirmala UI',sans-serif;background:var(--cream);color:var(--ink);position:relative}
+.bgblob{position:absolute;right:-180px;top:-120px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#ffe2d6,#f3d3c2 60%,transparent 61%)}
+.top{position:absolute;left:0;right:0;top:0;height:92px;background:var(--teal);display:flex;align-items:center;justify-content:space-between;padding:0 48px;color:#fff}
+.brand{font-size:36px;font-weight:700;letter-spacing:.5px}
+.lock{font-size:28px;font-weight:600;background:rgba(255,255,255,.14);padding:8px 20px;border-radius:40px}
+.left{position:absolute;left:56px;top:136px;width:500px}
+h1{font-size:62px;line-height:1.2;font-weight:700;color:var(--teal)}
+.sub{margin-top:18px;font-size:32px;font-weight:600}
+ul{list-style:none;margin-top:26px}
+li{font-size:31px;font-weight:600;margin:12px 0;display:flex;align-items:center;gap:14px}
+li:before{content:'✓';display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--teal2);color:#fff;font-size:24px;flex:none}
+.photo{position:absolute;right:56px;top:140px;width:440px;height:450px;border-radius:28px;overflow:hidden;box-shadow:0 24px 50px rgba(15,92,87,.28);border:6px solid #fff}
+.photo img{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;right:30px;top:536px;background:var(--coral);color:#fff;font-size:30px;font-weight:700;padding:10px 24px;border-radius:14px;transform:rotate(-4deg);box-shadow:0 8px 18px rgba(0,0,0,.18)}
+.ladder{position:absolute;left:56px;right:56px;top:650px;display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:18px}
+.card{background:#fff;border-radius:22px;padding:20px 18px;text-align:center;border:3px solid #e6dccd}
+.card .q{font-size:30px;font-weight:600}
+.card .p{font-size:62px;font-weight:700;color:var(--teal);line-height:1.1;margin-top:4px}
+.card .d{font-size:24px;font-weight:600;color:#6b6257;margin-top:2px}
+.card.best{background:var(--teal);border-color:var(--gold);color:#fff;position:relative;transform:scale(1.04)}
+.card.best .p{color:var(--gold);font-size:72px}
+.card.best .d{color:#d9f0ec}
+.badge{position:absolute;top:-22px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);font-size:24px;font-weight:700;padding:4px 18px;border-radius:30px;white-space:nowrap}
+.foot{position:absolute;left:0;right:0;bottom:0;height:150px;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.foot .a{font-size:30px;font-weight:600;color:#cfe7e3}
+.foot .b{font-size:38px;font-weight:700}
+.foot .b span{color:var(--gold)}
+</style></head><body>
+<div class="bgblob"></div>
+<div class="top"><div class="brand">Private Choice BD</div><div class="lock">🔒 গোপনীয় হোম ডেলিভারি</div></div>
+<div class="left">
+  <h1>দাম্পত্য আরামের গোপনীয়, সৎ সমাধান</h1>
+  <div class="sub">পানি-ভিত্তিক লুব্রিকেন্ট • ১০০ মিলি</div>
+  <ul><li>আঠালো না</li><li>পানিতে সহজে ধুয়ে যায়</li><li>কাপড়ে দাগ পড়ে না</li></ul>
+</div>
+<div class="photo"><img src="bottles.png"></div>
+<div class="tag">৩টি ফ্লেভার</div>
+<div class="ladder">
+  <div class="card"><div class="q">১ বোতল</div><div class="p">৳১৯৯</div><div class="d">+ ডেলিভারি চার্জ</div></div>
+  <div class="card"><div class="q">২ বোতল</div><div class="p">৳৩৬৯</div><div class="d">ফ্রি ডেলিভারি</div></div>
+  <div class="card best"><div class="badge">সেরা অফার</div><div class="q">৩ বোতল</div><div class="p">৳৪৪৯</div><div class="d">সারা দেশে ফ্রি ডেলিভারি</div></div>
+</div>
+<div class="foot"><div class="a">প্যাকেটের বাইরে পণ্যের নাম থাকে না • পণ্য দেখে টাকা দিন</div><div class="b">অর্ডার করতে <span>মেসেজ করুন</span></div></div>
+</body></html>

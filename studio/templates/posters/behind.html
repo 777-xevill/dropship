@@ -1,0 +1,22 @@
+{% extends "posters/_base.html" %}
+{# Text behind the subject: giant word, cut-out person/product in front (ref: "APPLE watch") #}
+{% block style %}
+body{background:linear-gradient(180deg, color-mix(in srgb, var(--l) 70%, #fff) 0%, var(--m) 100%)}
+.top{left:0;right:0;top:46px;text-align:center;color:var(--d);font-family:'Poppins';font-weight:600;font-size:28px;letter-spacing:6px}
+.word{left:0;right:0;top:{{ (H*0.07)|int }}px;text-align:center;white-space:nowrap;color:#fff;
+  font-family:{% if big_word_latin %}'Anton','Bebas Neue',sans-serif{% else %}'Anek Bangla',sans-serif{% endif %};
+  font-weight:800;line-height:1.05;letter-spacing:{{ 6 if big_word_latin else -2 }}px;
+  text-shadow:0 10px 40px rgba(0,0,0,.08)}
+.subject{left:50%;bottom:0;transform:translateX(-50%);height:{{ (H*0.80)|int }}px;max-width:{{ (W*0.96)|int }}px;object-fit:contain;object-position:bottom}
+.subject.prod{top:{{ (H*0.16)|int }}px;bottom:auto;height:{{ (H*0.54)|int }}px;max-width:{{ (W*0.80)|int }}px;object-position:center}
+.line{left:60px;right:60px;bottom:{{ (H*0.045)|int }}px;text-align:center;color:#fff;font-weight:700;font-size:38px;line-height:1.3;text-shadow:0 3px 14px rgba(0,0,0,.35)}
+.call{left:50%;transform:translateX(-50%);bottom:{{ (H*0.045 + 120)|int }}px;background:#fff;color:var(--d);padding:14px 34px;font-size:34px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.call .ph{font-family:'Poppins';font-weight:700}
+{% endblock %}
+{% block body %}
+<div class="abs top">{{ page|upper }}</div>
+<div class="abs word"><span data-fit="{{ (W*0.94)|int }}" data-fit-max="{{ (H*0.36)|int }}">{{ big_word }}</span></div>
+{% if person %}<img class="abs subject shadow" src="{{ person|img }}">{% else %}<img class="abs subject prod shadow" src="{{ product|img }}">{% endif %}
+{% if phone %}<div class="abs pill call">📞 <span class="ph">{{ phone }}</span></div>{% endif %}
+<div class="abs line">{{ sub or headline }}</div>
+{% endblock %}

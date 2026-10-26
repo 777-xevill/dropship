@@ -1,0 +1,71 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--ink:#1d2b2a;--teal:#0f5c57;--teal2:#14796f;--cream:#f7f1e8;--coral:#e8573f;--gold:#f4c35a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:'Hind Siliguri','Nirmala UI',sans-serif;color:#fff}
+.s{display:none;position:absolute;inset:0;padding:0 70px;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.s.on{display:flex}
+.brand{position:absolute;top:70px;left:0;right:0;text-align:center;font-size:34px;font-weight:700;opacity:.85;letter-spacing:.5px}
+.big{font-size:84px;font-weight:700;line-height:1.25}
+.mid{font-size:56px;font-weight:600;line-height:1.35}
+.pill{display:inline-block;padding:14px 34px;border-radius:60px;font-size:46px;font-weight:700}
+.img{border-radius:36px;overflow:hidden;border:8px solid rgba(255,255,255,.9);box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.img img{display:block;width:100%;height:100%;object-fit:cover}
+/* 1 hook: night bedroom, warm lamp */
+#s1{background:radial-gradient(circle at 78% 22%,#ffcf8a 0,#d98a3d 14%,#3b2433 45%,#1c1420 100%)}
+#s1 .big{margin-top:120px}
+#s1 .note{margin-top:50px;font-size:50px;font-weight:600;color:#ffd9a8}
+/* 2 product: bedside */
+#s2{background:linear-gradient(180deg,#2b1f2b 0,#4a3040 55%,#7a5440 56%,#5e3e2e 100%)}
+#s2 .img{width:820px;height:840px;margin-top:40px}
+#s2 .cap{margin-top:60px}
+/* 3 texture */
+#s3{background:linear-gradient(160deg,#0f5c57,#0b3d3a)}
+#s3 .img{width:900px;height:693px;margin:50px 0 60px}
+/* 4 parcel at the door */
+#s4{background:linear-gradient(180deg,#e9e2d6 0,#e9e2d6 62%,#b98e62 62%,#9c7550 100%);color:var(--ink)}
+.box{position:relative;width:640px;height:470px;background:linear-gradient(160deg,#c9a173,#a97e52);border-radius:18px;box-shadow:0 40px 60px rgba(0,0,0,.3);margin:40px 0 70px}
+.box:before{content:'';position:absolute;left:50%;top:0;bottom:0;width:110px;transform:translateX(-50%);background:rgba(240,225,200,.55)}
+.label{position:absolute;left:60px;top:120px;width:380px;background:#fff;border-radius:10px;padding:26px 30px;text-align:left;font-size:34px;line-height:1.6;color:#333;box-shadow:0 6px 14px rgba(0,0,0,.15)}
+.label b{display:block;font-size:26px;color:#999;font-weight:600}
+#s4 .pill{background:var(--teal);color:#fff;margin-top:30px}
+/* 5 price */
+#s5{background:var(--cream);color:var(--ink)}
+#s5 .img{width:640px;height:655px;border-color:#fff}
+.price{margin-top:60px;background:var(--teal);color:#fff;border-radius:40px;padding:40px 70px;border:6px solid var(--gold)}
+.price .q{font-size:56px;font-weight:600}
+.price .p{font-size:170px;font-weight:700;color:var(--gold);line-height:1.05}
+.price .d{font-size:50px;font-weight:600}
+.small{margin-top:40px;font-size:40px;font-weight:600;color:#5b544b}
+/* 6 CTA */
+#s6{background:linear-gradient(180deg,#0f5c57,#0a2f2c)}
+.btn{margin-top:70px;background:#fff;color:var(--teal);font-size:58px;font-weight:700;padding:30px 70px;border-radius:80px;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.chk{margin-top:70px;font-size:44px;font-weight:600;line-height:1.8;color:#d6efeb}
+</style></head><body>
+<div class="s" id="s1"><div class="brand">Private Choice BD</div>
+  <div class="big">বয়স বাড়লে শরীরের স্বাভাবিক আর্দ্রতা কমে</div>
+  <div class="note">এটা লজ্জার কিছু না — খুবই স্বাভাবিক</div></div>
+<div class="s" id="s2"><div class="brand">Private Choice BD</div>
+  <div class="img"><img src="bottles.png"></div>
+  <div class="cap mid">পানি-ভিত্তিক লুব্রিকেন্ট<br><span class="pill" style="background:var(--gold);color:var(--ink);margin-top:20px">আঠালো না</span></div></div>
+<div class="s" id="s3"><div class="brand">Private Choice BD</div>
+  <div class="mid">পানির মতো পাতলা না</div>
+  <div class="img"><img src="texture.png"></div>
+  <div class="mid">পানিতে সহজে ধুয়ে যায়<br>কাপড়ে দাগ পড়ে না</div></div>
+<div class="s" id="s4"><div class="brand" style="color:var(--teal)">Private Choice BD</div>
+  <div class="big" style="font-size:74px">এই পার্সেলে কী আছে,<br>ডেলিভারিম্যানও জানে না 🤫</div>
+  <div class="box"><div class="label"><b>প্রাপক</b>নাম<br>ফোন নম্বর<br>ঠিকানা</div></div>
+  <div class="pill">প্যাকেটের বাইরে পণ্যের নাম থাকে না</div></div>
+<div class="s" id="s5"><div class="brand" style="color:var(--teal)">Private Choice BD</div>
+  <div class="img"><img src="bottles.png"></div>
+  <div class="price"><div class="q">৩ বোতল</div><div class="p">৳৪৪৯</div><div class="d">সারা দেশে ফ্রি ডেলিভারি</div></div>
+  <div class="small">১ বোতল ৳১৯৯ • ২ বোতল ৳৩৬৯ (ফ্রি ডেলিভারি)</div></div>
+<div class="s" id="s6"><div class="brand">Private Choice BD</div>
+  <div class="big">পণ্য দেখে<br>টাকা দিন</div>
+  <div class="btn">"Send Message" চাপুন</div>
+  <div class="chk">🔒 গোপনীয় প্যাকিং<br>📦 সারা দেশে ক্যাশ অন ডেলিভারি</div></div>
+<script>var n=(location.search.match(/s=(\d)/)||[,1])[1];document.getElementById('s'+n).classList.add('on')</script>
+</body></html>

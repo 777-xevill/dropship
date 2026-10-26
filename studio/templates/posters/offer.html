@@ -1,0 +1,30 @@
+{% extends "posters/_base.html" %}
+{# Clean offer post for the page: product hero, 3 ticks, call button, trust badges #}
+{% block style %}
+body{background:linear-gradient(165deg, var(--p) 0%, var(--d) 100%);color:#fff}
+.glow{left:50%;top:{{ (H*0.47)|int }}px;width:{{ (W*1.1)|int }}px;height:{{ (W*1.1)|int }}px;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,.28), rgba(255,255,255,0) 62%)}
+.page{left:0;right:0;top:{{ (H*0.045)|int }}px;text-align:center}
+.page span{display:inline-block;font-weight:600;font-size:32px;padding:8px 26px;border-radius:999px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.3)}
+.h{left:60px;right:60px;top:{{ (H*0.11)|int }}px;text-align:center;font-weight:800;font-size:{{ 92 if (headline|length) < 16 else 74 }}px;line-height:1.12;text-shadow:0 6px 24px rgba(0,0,0,.25)}
+.sub{left:90px;right:90px;top:{{ (H*0.11)|int + (130 if (headline|length) < 16 else 200) }}px;text-align:center;font-weight:500;font-size:32px;line-height:1.3;opacity:.92}
+.hero{left:50%;top:{{ (H*0.50)|int }}px;transform:translate(-50%,-50%);max-width:{{ (W*0.66)|int }}px;max-height:{{ (H*0.36)|int }}px}
+.bottom{left:40px;right:40px;bottom:{{ (H*0.025)|int }}px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.ticks{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.ticks span{background:#fff;color:var(--d);font-weight:700;font-size:28px;padding:8px 20px;border-radius:999px}
+.call{background:var(--a);color:#111;padding:18px 46px;font-size:46px;box-shadow:0 14px 40px rgba(0,0,0,.3)}
+.call .ph{font-family:'Poppins';font-weight:800}
+.badges{text-align:center;font-weight:600;font-size:28px;opacity:.9}
+{% endblock %}
+{% block body %}
+<div class="abs glow"></div>
+{% if page %}<div class="abs page"><span>{{ page }}</span></div>{% endif %}
+<div class="abs h">{{ headline }}</div>
+{% if sub %}<div class="abs sub">{{ sub }}</div>{% endif %}
+<img class="abs hero shadow" src="{{ product|img }}">
+<div class="abs bottom">
+  <div class="ticks">{% for f in features[:3] %}<span>✓ {{ f }}</span>{% endfor %}</div>
+  <div class="pill call">📞 {% if phone %}<span class="ph">{{ phone }}</span>{% else %}{{ cta }}{% endif %}</div>
+  <div class="badges">{{ badge }}{% if badge and cta %} • {% endif %}{{ cta }}</div>
+</div>
+{% endblock %}

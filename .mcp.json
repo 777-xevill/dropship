@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "meta-ads": {
+      "type": "http",
+      "url": "https://mcp.facebook.com/ads"
+    },
+    "facebook-page": {
+      "command": "python",
+      "args": ["E:\\Dropship\\fb-page-mcp\\server.py"]
+    }
+  }
+}

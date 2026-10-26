@@ -1,0 +1,14 @@
+# studio - all free. Installed into studio/.venv (created with --system-site-packages)
+google-genai>=2.25      # Gemini TTS + script writer (free tier)
+gradio_client>=2.0      # free Hugging Face Spaces (LTX-2 lip-sync, Qwen-Image-Edit, FLUX.2 klein)
+httpx
+playwright              # renders HTML titles/posters with the Edge already on Windows (no browser download)
+python-dotenv
+pyyaml
+jinja2
+numpy
+pillow
+scipy
+rembg                   # product cut-outs
+onnxruntime             # rembg + video matting
+edge-tts                # fallback Bangla voice (no key)

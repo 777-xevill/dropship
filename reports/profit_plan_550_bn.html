@@ -1,0 +1,109 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><style>
+@font-face{font-family:'Anek Bangla';src:url('file:///E:/Dropship/studio/assets/fonts/AnekBangla-VF.ttf');font-weight:100 800;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-SemiBold.ttf');font-weight:600;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Noto Sans Bengali';src:url('file:///E:/Dropship/studio/assets/fonts/NotoSansBengali-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Noto Serif Bengali';src:url('file:///E:/Dropship/studio/assets/fonts/NotoSerifBengali-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Baloo Da 2';src:url('file:///E:/Dropship/studio/assets/fonts/BalooDa2-VF.ttf');font-weight:400 800;font-display:block}
+@font-face{font-family:'Galada';src:url('file:///E:/Dropship/studio/assets/fonts/Galada-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Tiro Bangla';src:url('file:///E:/Dropship/studio/assets/fonts/TiroBangla-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Anton';src:url('file:///E:/Dropship/studio/assets/fonts/Anton-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Bebas Neue';src:url('file:///E:/Dropship/studio/assets/fonts/BebasNeue-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-SemiBold.ttf');font-weight:600;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-ExtraBold.ttf');font-weight:800;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:'Montserrat';src:url('file:///E:/Dropship/studio/assets/fonts/Montserrat-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Playfair Display';src:url('file:///E:/Dropship/studio/assets/fonts/PlayfairDisplay-VF.ttf');font-weight:400 900;font-display:block}
+@page { size: A4; margin: 13mm 14mm 14mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Hind Siliguri'; color: #2b1d1f; font-size: 14px; line-height: 1.6; margin: 0; }
+h2 { font-size: 20px; color: #7a1f35; margin: 18px 0 8px; display: flex; align-items: center; gap: 10px; }
+h2 .n { background: #7a1f35; color: #fff; border-radius: 50%; width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; flex: none; }
+h2::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, #c9a063, transparent); }
+.cover { background: linear-gradient(135deg, #5a1426, #7a1f35 55%, #9b3a52); color: #fff; border-radius: 16px; padding: 24px 28px; }
+.cover .tag { color: #c9a063; letter-spacing: 3px; font-size: 12px; font-weight: 700; }
+.cover h1 { font-size: 28px; margin: 6px 0 2px; line-height: 1.3; }
+.cover p { margin: 0; opacity: .9; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+.kpi { background: #f8efe6; border-radius: 12px; padding: 9px 12px; border-top: 4px solid #7a1f35; }
+.kpi b { display: block; font-size: 22px; color: #7a1f35; line-height: 1.3; }
+.kpi span { font-size: 12.5px; color: #5c4b4e; }
+.kpi.g { border-top-color: #2f7d4f; } .kpi.g b { color: #2f7d4f; }
+.box { background: #f8efe6; border-radius: 12px; padding: 9px 16px; margin: 10px 0; }
+.good { background: #eaf5ee; border-left: 5px solid #2f7d4f; }
+.warn { background: #fff3e6; border-left: 5px solid #c9a063; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+th { background: #7a1f35; color: #fff; padding: 6px 8px; text-align: left; font-weight: 600; }
+td { padding: 6px 8px; border-bottom: 1px solid #eadfd6; }
+tr:nth-child(even) td { background: #fcf8f4; }
+.pb { page-break-before: always; }
+.small { font-size: 12px; color: #6b5d5f; }
+ul { margin: 4px 0; padding-left: 22px; } li { margin: 2px 0; }
+</style></head><body>
+
+<div class="cover"><div class="tag">PRIVATE CHOICE BD · লাভের হিসাব</div>
+<h1>দিনে ৳১,০০০ বিজ্ঞাপন, ৮টা অর্ডার — কত লাভ?</h1>
+<p>গড় অর্ডার ৳৫৫০ · ১ সপ্তাহ ও ৩০ দিনের হিসাব · মাসে ৳১ লাখ লাভের পরিকল্পনা</p></div>
+
+<h2><span class="n">১</span>আমাদের হিসাবের ভিত্তি</h2>
+<div class="kpis">
+  <div class="kpi"><b>৳৫৫০</b><span>গড় অর্ডার (প্রায় ২ বোতল)</span></div>
+  <div class="kpi"><b>৳১,০০০</b><span>দিনে বিজ্ঞাপন (+১৫% VAT = ৳১,১৫০)</span></div>
+  <div class="kpi"><b>৮টা</b><span>দিনে অর্ডার</span></div>
+  <div class="kpi"><b>৳১৪৪</b><span>প্রতি অর্ডারে বিজ্ঞাপন খরচ</span></div>
+</div>
+
+<h2><span class="n">২</span>একটা ৳৫৫০ অর্ডারের টাকা কোথায় যায়</h2>
+<svg viewBox="0 0 660 150" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Hind Siliguri"><rect x="10.0" y="10" width="139.6" height="58" fill="#8c6d5c"/><text x="79.8" y="46" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">৳১২০</text><rect x="149.6" y="10" width="116.4" height="58" fill="#c9a063"/><text x="207.8" y="46" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">৳১০০</text><rect x="266.0" y="10" width="18.0" height="58" fill="#9a8f88"/><rect x="284.0" y="10" width="98.8" height="58" fill="#b9a89c"/><text x="333.4" y="46" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">৳৮৫</text><rect x="382.8" y="10" width="167.3" height="58" fill="#c9787f"/><text x="466.5" y="46" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">৳১৪৪</text><rect x="550.1" y="10" width="99.9" height="58" fill="#2f7d4f"/><text x="600.1" y="46" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">৳৮৬</text><rect x="10" y="98" width="14" height="14" rx="3" fill="#8c6d5c"/><text x="30" y="110" font-size="14" fill="#2b1d1f">২ বোতলের দাম ৳১২০</text><rect x="230" y="98" width="14" height="14" rx="3" fill="#c9a063"/><text x="250" y="110" font-size="14" fill="#2b1d1f">কুরিয়ার ৳১০০</text><rect x="450" y="98" width="14" height="14" rx="3" fill="#9a8f88"/><text x="470" y="110" font-size="14" fill="#2b1d1f">প্যাকেট + COD ৳১৬</text><rect x="10" y="122" width="14" height="14" rx="3" fill="#b9a89c"/><text x="30" y="134" font-size="14" fill="#2b1d1f">ফেরতের ক্ষতি ৳৮৫</text><rect x="230" y="122" width="14" height="14" rx="3" fill="#c9787f"/><text x="250" y="134" font-size="14" fill="#2b1d1f">বিজ্ঞাপন (VAT সহ) ৳১৪৪</text><rect x="450" y="122" width="14" height="14" rx="3" fill="#2f7d4f"/><text x="470" y="134" font-size="14" fill="#2b1d1f">লাভ ৳৮৬</text></svg>
+<table><tr><th>হিসাব</th><th>টাকা</th></tr>
+<tr><td>অর্ডারের দাম</td><td>৳৫৫০</td></tr>
+<tr><td>২ বোতলের কেনা দাম (৳৬০ × ২)</td><td>−৳১২০</td></tr>
+<tr><td>কুরিয়ার (ডেলিভারি ফ্রি, আমরা দেই)</td><td>−৳১০০</td></tr>
+<tr><td>প্যাকেট ৳১০ + COD চার্জ ১%</td><td>−৳১৬</td></tr>
+<tr><td><b>ডেলিভারি হলে লাভ (বিজ্ঞাপনের আগে)</b></td><td><b>৳৩১৪</b></td></tr>
+<tr><td>৫টায় ১টা পার্সেল ফেরত ধরে গড়ে হাতে থাকে</td><td>৳২৩০</td></tr>
+<tr><td>প্রতি অর্ডারে বিজ্ঞাপন (৳১,১৫০ ÷ ৮)</td><td>−৳১৪৪</td></tr>
+<tr><td><b>প্রতি অর্ডারে আসল লাভ</b></td><td><b>৳৮৬</b></td></tr></table>
+<div class="box good">মানে প্রতিদিন ৮টা অর্ডারে লাভ প্রায় <b>৳৬৮৭</b> — সব খরচ (বোতল, কুরিয়ার, প্যাকেট, ফেরত, বিজ্ঞাপন + VAT) বাদ দিয়ে।</div>
+
+<h2 class="pb"><span class="n">৩</span>১ সপ্তাহ আর ৩০ দিনে কত লাভ</h2>
+<table><tr><th>হিসাব</th><th>১ সপ্তাহ (৭ দিন)</th><th>৩০ দিন</th></tr>
+<tr><td>মোট অর্ডার</td><td>৫৬টা</td><td>২৪০টা</td></tr>
+<tr><td>অর্ডারের মোট দাম</td><td>৳৩০,৮০০</td><td>৳১৩২,০০০</td></tr>
+<tr><td>আসলে হাতে আসা বিক্রি (৮০% ডেলিভারি)</td><td>৳২৪,৬৪০</td><td>৳১০৫,৬০০</td></tr>
+<tr><td>বিজ্ঞাপন খরচ (VAT সহ)</td><td>৳৮,০৫০</td><td>৳৩৪,৫০০</td></tr>
+<tr><td>বোতল পাঠাতে হবে</td><td>১১২টা</td><td>৪৮০টা</td></tr>
+<tr><td>বোতল আসলে খরচ হবে (ফেরত বোতল আবার স্টকে)</td><td>৯০টা</td><td>৩৮৪টা</td></tr>
+<tr><td><b>লাভ</b></td><td><b>৳৪,৮০৮</b></td><td><b>৳২০,৬০৪</b></td></tr></table>
+<h3 style="color:#5a1426;margin:12px 0 4px">৩০ দিনে লাভ কীভাবে জমবে</h3>
+<svg viewBox="0 0 660 260" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Hind Siliguri"><line x1="70" x2="640" y1="220.0" y2="220.0" stroke="#eadfd6"/><text x="64" y="224.0" text-anchor="end" font-size="12" fill="#9a8f88">৳০</text><line x1="70" x2="640" y1="170.0" y2="170.0" stroke="#eadfd6"/><text x="64" y="174.0" text-anchor="end" font-size="12" fill="#9a8f88">৳৫,৭৬৯</text><line x1="70" x2="640" y1="120.0" y2="120.0" stroke="#eadfd6"/><text x="64" y="124.0" text-anchor="end" font-size="12" fill="#9a8f88">৳১১,৫৩৮</text><line x1="70" x2="640" y1="70.0" y2="70.0" stroke="#eadfd6"/><text x="64" y="74.0" text-anchor="end" font-size="12" fill="#9a8f88">৳১৭,৩০৭</text><line x1="70" x2="640" y1="20.0" y2="20.0" stroke="#eadfd6"/><text x="64" y="24.0" text-anchor="end" font-size="12" fill="#9a8f88">৳২৩,০৭৬</text><polygon fill="#2f7d4f" opacity=".2" points="70,220 70.0,214.0 89.0,208.1 107.9,202.1 126.9,196.2 145.9,190.2 164.8,184.3 183.8,178.3 202.8,172.4 221.7,166.4 240.7,160.5 259.7,154.5 278.6,148.6 297.6,142.6 316.6,136.7 335.5,130.7 354.5,124.8 373.4,118.8 392.4,112.9 411.4,106.9 430.3,101.0 449.3,95.0 468.3,89.0 487.2,83.1 506.2,77.1 525.2,71.2 544.1,65.2 563.1,59.3 582.1,53.3 601.0,47.4 620.0,41.4 620.0,220"/><polyline fill="none" stroke="#2f7d4f" stroke-width="3.5" points="70.0,214.0 89.0,208.1 107.9,202.1 126.9,196.2 145.9,190.2 164.8,184.3 183.8,178.3 202.8,172.4 221.7,166.4 240.7,160.5 259.7,154.5 278.6,148.6 297.6,142.6 316.6,136.7 335.5,130.7 354.5,124.8 373.4,118.8 392.4,112.9 411.4,106.9 430.3,101.0 449.3,95.0 468.3,89.0 487.2,83.1 506.2,77.1 525.2,71.2 544.1,65.2 563.1,59.3 582.1,53.3 601.0,47.4 620.0,41.4"/><circle cx="183.8" cy="178.3" r="5.5" fill="#7a1f35"/><text x="175.8" y="166.3" text-anchor="end" font-size="14" font-weight="700" fill="#7a1f35">দিন ৭: ৳৪,৮০৮</text><circle cx="335.5" cy="130.7" r="5.5" fill="#7a1f35"/><text x="327.5" y="118.7" text-anchor="end" font-size="14" font-weight="700" fill="#7a1f35">দিন ১৫: ৳১০,৩০২</text><circle cx="620.0" cy="41.4" r="5.5" fill="#7a1f35"/><text x="612.0" y="29.4" text-anchor="end" font-size="14" font-weight="700" fill="#7a1f35">দিন ৩০: ৳২০,৬০৪</text><text x="70.0" y="242" text-anchor="middle" font-size="13" fill="#2b1d1f">দিন ১</text><text x="183.8" y="242" text-anchor="middle" font-size="13" fill="#2b1d1f">দিন ৭</text><text x="335.5" y="242" text-anchor="middle" font-size="13" fill="#2b1d1f">দিন ১৫</text><text x="468.3" y="242" text-anchor="middle" font-size="13" fill="#2b1d1f">দিন ২২</text><text x="620.0" y="242" text-anchor="middle" font-size="13" fill="#2b1d1f">দিন ৩০</text></svg>
+<div class="box warn"><b>স্টক:</b> দিনে ১৬টা বোতল যায়। ১ সপ্তাহের জন্য অন্তত <b>১১২টা</b>, পুরো মাসের জন্য প্রায় <b>৩৮৪–৪৮০টা</b> বোতল লাগবে।
+সবসময় হাতে ২ সপ্তাহের স্টক (প্রায় ২২৫টা, ৳১৩,৫০০) রাখা ভালো।</div>
+<p class="small">বিজ্ঞাপনের টাকা সাথে সাথে কাটে, কুরিয়ারের টাকা আসে ৩–৫ দিন পর — তাই প্রথম সপ্তাহে হাতে নগদ কম মনে হবে, মাস শেষে ঠিক হয়ে যাবে।</p>
+
+<h2 class="pb"><span class="n">৪</span>মাসে ৳১ লাখ লাভ করতে কী লাগবে</h2>
+<p>এখন মাসে লাভ প্রায় <b>৳২০,৬০৪</b>। ৳১ লাখ মানে প্রায় <b>৪.৯ গুণ</b>। তিনটা অবস্থায় হিসাব:</p>
+<table><tr><th>অবস্থা</th><th>প্রতি অর্ডারে লাভ</th><th>দিনে অর্ডার</th><th>দিনে বিজ্ঞাপন (VAT ছাড়া)</th><th>মাসে বোতল পাঠানো</th><th>হাতে স্টক (২ সপ্তাহ)</th><th>মাসে হাতে আসা বিক্রি</th></tr><tr><td><b>এখনকার মতো খরচ</b></td><td>৳৮৬</td><td><b>৩৯টা</b></td><td><b>৳৪,৮৫৩</b></td><td>২,৩৩০টা</td><td>১,০৮৭টা (৳৬৫,২৩০)</td><td>৳৫১২,৫২২</td></tr><tr><td><b>বিজ্ঞাপন খরচ বাড়লে (৳১৭০/অর্ডার)</b></td><td>৳৬০</td><td><b>৫৬টা</b></td><td><b>৳৮,২৬৮</b></td><td>৩,৩৫৬টা</td><td>১,৫৬৬টা (৳৯৩,৯৬০)</td><td>৳৭৩৮,২৫৫</td></tr><tr><td><b>ফেরত ১০% + বোতল ৳৫০ হলে</b></td><td>৳১২০</td><td><b>২৮টা</b></td><td><b>৳৪,১০৫</b></td><td>১,৬৬৬টা</td><td>৭৭৭টা (৳৩৮,৮৭৩)</td><td>৳৪১২,৩২৮</td></tr></table>
+<ul class="small">
+<li><b>এখনকার মতো খরচ:</b> প্রতি অর্ডারে বিজ্ঞাপন ৳১৪৪ থাকলে।</li>
+<li><b>বিজ্ঞাপন খরচ বাড়লে:</b> বাজেট বাড়ালে সাধারণত প্রতি অর্ডারের খরচ বাড়ে — এটাই সবচেয়ে বাস্তব হিসাব।</li>
+<li><b>ফেরত ১০% + বোতল ৳৫০:</b> কল করে কনফার্ম আর বেশি বোতল একসাথে কিনলে — সবচেয়ে কম কাজে ৳১ লাখ।</li>
+</ul>
+<div class="box good"><b>লক্ষ্য:</b> দিনে প্রায় <b>২৮–৫৬টা অর্ডার</b>, বিজ্ঞাপন দিনে প্রায় <b>৳৪,১০৫–৳৮,২৬৮</b>,
+আর হাতে সবসময় প্রায় <b>৭৭৭–১,৫৬৬টা বোতল</b>।</div>
+
+<h3 style="color:#5a1426;margin:12px 0 4px">ধাপে ধাপে কীভাবে যাবো</h3>
+<table><tr><th>সময়</th><th>দিনে বিজ্ঞাপন</th><th>কী করবো</th></tr>
+<tr><td>সপ্তাহ ১</td><td>৳১,০০০</td><td>দিনে ৮টা অর্ডার ধরে রাখা। প্রতিটা অর্ডার, ফেরত আর কেন কাস্টমার কিনলো না — খাতায় লেখা।</td></tr>
+<tr><td>সপ্তাহ ২–৩</td><td>৳১,৩০০ → ৳১,৭০০</td><td>প্রতি ২–৩ দিনে ২০–৩০% বাজেট বাড়ানো, যতক্ষণ প্রতি অর্ডারে বিজ্ঞাপন ৳১৭০ এর নিচে। নতুন ভিডিও যোগ।</td></tr>
+<tr><td>মাস ২</td><td>৳২,৫০০ → ৳৪,০০০</td><td>৫০০+ বোতল একসাথে কিনে দাম কমানো। ১ জন কল সহকারী। ফেরত ১০–১৫% এ নামানো।</td></tr>
+<tr><td>মাস ৩</td><td>৳৫,০০০+</td><td>দিনে প্রায় ২৮–৫৬টা অর্ডার (খরচ কেমন থাকে তার উপর) — <b>মাসে ৳১ লাখ লাভ</b>।</td></tr></table>
+<div class="box warn"><b>থামার নিয়ম:</b> পরপর ২ দিন প্রতি অর্ডারে বিজ্ঞাপন খরচ ৳২৩০ এর বেশি হলে লস হচ্ছে — বাজেট কমিয়ে নতুন ভিডিও দিতে হবে।</div>
+<p class="small">অনুমান: বোতল ৳৬০, গড় অর্ডারে ২ বোতল, কুরিয়ার ৳১০০ (ফেরত এলেও দিতে হয়), প্যাকেট ৳১০, COD ১%, ফেরত ২০%, বিজ্ঞাপনে ১৫% VAT।
+অর্ডারের সংখ্যা ও গড় অর্ডার আপনার দেওয়া তথ্য। এগুলো লক্ষ্য, গ্যারান্টি না।</p>
+</body></html>

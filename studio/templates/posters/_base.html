@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+{{ font_css() }}
+:root{--p:{{c.primary}};--d:{{c.dark}};--m:{{c.mid}};--l:{{c.light}};--a:{{c.accent}};--W:{{W}}px;--H:{{H}}px}
+*{box-sizing:border-box}
+html,body{margin:0;width:{{W}}px;height:{{H}}px;overflow:hidden}
+body{font-family:'Anek Bangla','Hind Siliguri','Poppins',sans-serif;-webkit-font-smoothing:antialiased;position:relative}
+.bn{font-family:'Anek Bangla','Hind Siliguri',sans-serif}
+.lat{font-family:'Poppins',sans-serif}
+.abs{position:absolute}
+.shadow{filter:drop-shadow(0 34px 38px rgba(0,0,0,.30)) drop-shadow(0 8px 10px rgba(0,0,0,.18))}
+.pill{display:inline-flex;align-items:center;gap:.45em;border-radius:999px;font-weight:700;white-space:nowrap}
+{% block style %}{% endblock %}
+</style></head><body>{% block body %}{% endblock %}</body></html>

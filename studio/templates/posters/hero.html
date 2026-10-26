@@ -1,0 +1,24 @@
+{% extends "posters/_base.html" %}
+{# Person hero: your character holding the product, curved white panel with a two-tone tagline (ref: "Aqua") #}
+{% block style %}
+body{background:var(--p)}
+.photo{left:0;top:0;width:100%;height:{{ (H*0.80)|int }}px;object-fit:cover;object-position:50% 30%}
+.logo{right:56px;top:44px;color:#fff;font-weight:800;font-size:52px;font-style:italic;text-shadow:0 4px 18px rgba(0,0,0,.35)}
+.panel{left:0;bottom:0;width:100%;height:{{ (H*0.34)|int }}px}
+.tag{left:64px;bottom:{{ (H*0.115)|int }}px;width:{{ (W*0.60)|int }}px;font-weight:600;font-size:{{ 70 if (headline|length) < 18 else 58 }}px;line-height:1.08;color:var(--p);letter-spacing:-.5px}
+.tag b{font-weight:800;color:var(--d)}
+.right{right:60px;bottom:{{ (H*0.125)|int }}px;width:{{ (W*0.30)|int }}px;text-align:right;color:#222;font-weight:600;font-size:30px;line-height:1.35}
+.foot{left:64px;right:60px;bottom:40px;display:flex;justify-content:space-between;align-items:center;color:#666;font-size:26px;font-weight:600}
+.foot .ph{font-family:'Poppins';font-weight:700;color:var(--d);font-size:32px}
+{% endblock %}
+{% block body %}
+<img class="abs photo" src="{{ (hero_photo or scene or product)|img }}">
+<div class="abs logo">{{ brand_name }}</div>
+<svg class="abs panel" viewBox="0 0 {{W}} {{ (H*0.34)|int }}" preserveAspectRatio="none">
+  <path d="M0,{{ (H*0.07)|int }} C{{ (W*0.35)|int }},{{ (H*0.10)|int }} {{ (W*0.70)|int }},-10 {{W}},{{ (H*0.025)|int }} L{{W}},{{ (H*0.34)|int }} L0,{{ (H*0.34)|int }} Z" fill="#fff"/>
+</svg>
+{% set words = headline.split(' ') %}{% set half = ((words|length)/2)|round(0,'ceil')|int %}
+<div class="abs tag">{{ words[:half]|join(' ') }} <b>{{ words[half:]|join(' ') }}</b></div>
+<div class="abs right">{{ features[:3]|join(' • ') }}</div>
+<div class="abs foot"><span>{{ page }}</span>{% if phone %}<span class="ph">📞 {{ phone }}</span>{% else %}<span>{{ cta }}</span>{% endif %}</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+{{ font_css() }}
+html,body{margin:0;width:{{W}}px;height:{{H}}px;background:transparent;overflow:hidden}
+.wrap{position:absolute;left:0;right:0;top:{{ top|default(300) }}px;display:flex;justify-content:center}
+.chip{display:flex;align-items:center;gap:18px;padding:22px 42px;border-radius:999px;
+  background:{{ c.primary }};color:#fff;font-family:'Anek Bangla','Hind Siliguri',sans-serif;font-weight:700;font-size:58px;
+  box-shadow:0 14px 40px rgba(0,0,0,.28);border:4px solid rgba(255,255,255,.85)}
+.ic{width:58px;height:58px;border-radius:50%;background:#fff;color:{{ c.primary }};display:grid;place-items:center;font-size:40px;font-weight:900;font-family:'Poppins'}
+</style></head><body><div class="wrap"><div class="chip"><div class="ic">✓</div><div>{{ text }}</div></div></div></body></html>

@@ -1,0 +1,176 @@
+# ============================================================================
+#  STUDIO PROJECT FILE  -  edit freely (Bangla is fine). Re-run the commands after editing.
+#  script.hooks : first 2-3 seconds. Each hook = one video variant.
+#  script.body  : the same for every variant.  visual: talk | product | photo:<file> | scene:<name>
+#  scenes       : English prompts for the AI images of your character with this product.
+#  brand.show_price: false  ->  no price anywhere; CTA asks people to call.
+# ============================================================================
+character: demo
+formats:
+- selfie
+- greenscreen
+- faceless
+script_style: explainer
+product:
+  name: TONO HIME Water-based Gel
+  name_bn: টোনো হিমে ওয়াটার-বেসড জেল
+  short_name: TONO HIME
+  what_it_is: 100 ml water-based personal lubricant gel (strawberry / blueberry / grape scent) for married couples' comfort. Pharmacist-like, respectful, health and comfort focus only.
+  benefits:
+  - পানি-ভিত্তিক, আঠালো না
+  - পানিতে সহজে ধুয়ে যায়
+  - কাপড়ে দাগ পড়ে না
+  - শুষ্কতাজনিত অস্বস্তি কমাতে সাহায্য করে
+  - '৩টি সুগন্ধ: স্ট্রবেরি, ব্লুবেরি, আঙুর'
+  proof:
+  - প্যাকেটের বাইরে পণ্যের নাম থাকে না (গোপনীয় প্যাকেজিং)
+  - পণ্য হাতে পেয়ে দেখে টাকা দেওয়া যায় (ক্যাশ অন ডেলিভারি)
+  - সারা দেশে ফ্রি ডেলিভারি
+  - কল করলেই দাম ও অর্ডারের বিস্তারিত জানানো হয়
+  avoid:
+  - any price or money amount
+  - ১০০% নিরাপদ / কোনো পার্শ্বপ্রতিক্রিয়া নেই
+  - জাপানি / অরিজিনাল
+  - sex, pleasure, performance, 'time' or enhancement claims
+  - asking the viewer about their body or health problems
+  - suggestive words or innuendo
+  - পানির মতো পাতলা বা হালকা বলা যাবে না (gel is thicker than water, that is a quality sign)
+  audience: married couples 30+, many 40-60; respectful, private, comfort-first
+  hero_photo: photos/bottle_clear.png
+  broll_photos:
+  - photos_web/othoba_grape.jpeg
+  - photos/texture.png
+  - photos_web/othoba_strawberry.jpeg
+  no_cutout:
+  - bottles.png
+  - texture.png
+brand:
+  page: Private Choice BD
+  phone: 01612-237962
+  show_price: false
+  price_text: ''
+  cta: দাম ও অর্ডারের জন্য এখনই কল করুন
+  badges:
+  - গোপনীয় প্যাকেজিং
+  - পণ্য দেখে টাকা
+  - ফ্রি ডেলিভারি
+  colors:
+    primary: ''
+music: ''
+caption_style: pop
+title_style: white
+sfx: true
+scenes:
+  selfie_a: the person from image 1 holding the product from image 2 close to her face, filming a casual selfie video with her phone at arm's length, looking into the lens, natural expression mid-sentence, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, in a cozy Dhaka living room seated on a patterned sofa near a full bookshelf, soft natural light, realistic smartphone photo, vertical 9:16
+  selfie_b: the person from image 1 holding the product from image 2, filming a casual selfie video at a slightly low angle, looking into the lens, natural expression mid-sentence, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, in a sunny apartment balcony corner framed by potted green plants and sheer curtains, soft natural light, realistic smartphone photo, vertical 9:16
+  greenscreen: the person from image 1, waist-up, talking to camera with relaxed hand gestures, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, plain light grey studio wall background, even soft light, realistic, vertical 9:16
+  poster_hero: the person from image 1 holding the product from image 2 out toward the camera with a confident smile, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, clean bright studio background in the product's colours, commercial photo, vertical 4:5
+  product_scene: the product from image 2 alone, styled on a surface that fits it, premium e-commerce hero shot, soft shadows, no text, vertical 4:5
+script:
+  hooks:
+  - id: h01
+    pattern: problem_callout
+    say: সংসার জীবনে শুষ্কতাজনিত অস্বস্তি একটি অতি পরিচিত বিষয় আপুরা।
+    text: শুষ্কতাজনিত অস্বস্তি নিয়ে খোলামেলা কথা
+    visual: talk
+  - id: h02
+    pattern: curiosity_gap
+    say: অনেকেই এই দরকারি জিনিসটি সম্পর্কে ঠিকমতো বিস্তারিত জানেন না।
+    text: একটি প্রয়োজনীয় যত্ন ও সমাধান
+    visual: talk
+  - id: h03
+    pattern: before_after
+    say: আঠালো ভাব ছাড়া ব্যক্তিগত স্বস্তির অনুভূতি পাওয়া এখন একদম সহজ।
+    text: আঠালো ভাব ছাড়া দারুণ স্বস্তি
+    visual: product
+  - id: h04
+    pattern: social_proof
+    say: এই বিশেষ ওয়াটার বেসড জেলটি নিয়ে অনেকেই জানতে চেয়েছেন।
+    text: সবাই যা নিয়ে জানতে চেয়েছেন
+    visual: talk
+  - id: h05
+    pattern: demonstration
+    say: হাতে নিয়ে দেখুন, এটি ব্যবহারে কাপড়ে কোনো দাগ পড়ে না।
+    text: কাপড়ে কোনো দাগ পড়ে না
+    visual: product
+  - id: h06
+    pattern: objection_first
+    say: অনেকের দ্বিধা থাকে ওয়াটার বেসড জেল কি আঠালো হবে?
+    text: ওয়াটার বেসড জেল কি আঠালো?
+    visual: talk
+  - id: h07
+    pattern: us_vs_them
+    say: তেল চিটচিটে ভাব নয়, পানিতেই এটি একদম সহজে ধুয়ে যায়।
+    text: তেলতেলে ভাব নয় সহজ ওয়াশ
+    visual: product
+  - id: h08
+    pattern: specific_number
+    say: বিবাহিত জীবনে স্বস্তি বজায় রাখতে এতে ৩টি ভিন্ন সুবাস রয়েছে।
+    text: ৩টি চমৎকার ফ্রুটি সুবাস
+    visual: product
+  - id: h09
+    pattern: pattern_break
+    say: লজ্জা বা সংকোচ নয়, নিজের স্বস্তির যত্ন নেওয়াটা বেশ জরুরি।
+    text: সংকোচ নয় স্বস্তিই প্রথম পছন্দ
+    visual: talk
+  - id: h10
+    pattern: curiosity_gap
+    say: বিবাহিত জীবনে বাড়তি স্বস্তি এনে দিতে পারে এই বিশেষ জেল।
+    text: বিবাহিত জীবনের জন্য জরুরি স্বস্তি
+    visual: talk
+  body:
+  - id: b01
+    say: আপুরা, বিবাহিত জীবনে শুষ্কতাজনিত অস্বস্তি কমাতে সঠিক যত্ন নেওয়া দরকার।
+    visual: talk
+    text: প্রয়োজনীয় ব্যক্তিগত যত্ন
+  - id: b02
+    say: এটি হলো টোনো হিমে ওয়াটার-বেসড জেল, যা সম্পূর্ণ পানি-ভিত্তিক।
+    visual: product
+    text: টোনো হিমে ওয়াটার-বেসড জেল
+  - id: b03
+    say: এই জেলটি মোটেও আঠালো না এবং কাপড়ে কোনো দাগ ফেলে না।
+    visual: product
+    text: দাগমুক্ত ও নন-স্টিকি
+  - id: b04
+    say: ব্যবহারের পর শুধু পানিতেই এটি খুব সহজে ধুয়ে পরিষ্কার হয়।
+    visual: product
+    text: সহজে পানিতে পরিষ্কার
+  - id: b05
+    say: এতে পাবেন স্ট্রবেরি, ব্লুবেরি আর আঙুরের মতো ৩টি মিষ্টি সুবাস।
+    visual: talk
+    text: ৩টি মিষ্টি সুবাস
+  - id: b06
+    say: প্যাকেটের বাইরে কোনো নাম থাকবে না এবং দেখে নেওয়ার সুবিধা আছে।
+    visual: talk
+    text: সম্পূর্ণ গোপনীয় ডেলিভারি
+  cta:
+    say: দাম ও অর্ডারের জন্য স্ক্রিনে থাকা নম্বরে এখনই কল করুন।
+    text: অর্ডার করতে এখনই কল করুন
+poster:
+  headline: বিবাহিত জীবনের স্বস্তিময় সমাধান
+  sub: টোনো হিমে ওয়াটার-বেসড জেল শুষ্কতাজনিত অস্বস্তি কমাতে সাহায্য করে
+  features:
+  - পানি-ভিত্তিক ও নন-স্টিকি
+  - সহজে পানিতে পরিষ্কার
+  - কাপড়ে দাগ পড়ে না
+  badge: ক্যাশ অন ডেলিভারি
+  big_word: COMFORT
+  cta: অর্ডারের জন্য এখনই কল করুন
+ad_copy:
+  primary_text: 'বিবাহিত জীবনে শুষ্কতাজনিত অস্বস্তি কমিয়ে দৈনন্দিন স্বস্তি বজায় রাখতে বেছে নিন টোনো হিমে ওয়াটার-বেসড জেল।
+
+
+    ✔ পানি-ভিত্তিক ফর্মুলা হওয়ায় কোনো আঠালো ভাব থাকে না
+
+    ✔ ব্যবহারের পর সাধারণ পানিতেই সহজে পরিষ্কার হয়ে যায়
+
+    ✔ কাপড়ে কোনো প্রকার দাগ কিংবা ছোপ ফেলে না
+
+    ✔ স্ট্রবেরি, ব্লুবেরি ও আঙুর—রয়েছে ৩টি মিষ্টি সুবাস
+
+    ✔ সম্পূর্ণ গোপনীয় প্যাকেজিং ও সারা দেশে ফ্রি ডেলিভারি
+
+
+    পণ্য হাতে পেয়ে দেখে নেওয়ার সুব্যবস্থা রয়েছে। বিস্তারিত দাম ও অর্ডারের জন্য এখনই কল করুন: ০১৬১২-২৩৭৯৬২'
+  headline: টোনো হিমে ওয়াটার-বেসড জেল
+voice_speed: 1.08

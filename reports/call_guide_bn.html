@@ -1,0 +1,241 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><style>
+@font-face{font-family:'Anek Bangla';src:url('file:///E:/Dropship/studio/assets/fonts/AnekBangla-VF.ttf');font-weight:100 800;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-SemiBold.ttf');font-weight:600;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Noto Sans Bengali';src:url('file:///E:/Dropship/studio/assets/fonts/NotoSansBengali-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Noto Serif Bengali';src:url('file:///E:/Dropship/studio/assets/fonts/NotoSerifBengali-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Baloo Da 2';src:url('file:///E:/Dropship/studio/assets/fonts/BalooDa2-VF.ttf');font-weight:400 800;font-display:block}
+@font-face{font-family:'Galada';src:url('file:///E:/Dropship/studio/assets/fonts/Galada-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Tiro Bangla';src:url('file:///E:/Dropship/studio/assets/fonts/TiroBangla-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Anton';src:url('file:///E:/Dropship/studio/assets/fonts/Anton-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Bebas Neue';src:url('file:///E:/Dropship/studio/assets/fonts/BebasNeue-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-SemiBold.ttf');font-weight:600;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-ExtraBold.ttf');font-weight:800;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:'Montserrat';src:url('file:///E:/Dropship/studio/assets/fonts/Montserrat-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Playfair Display';src:url('file:///E:/Dropship/studio/assets/fonts/PlayfairDisplay-VF.ttf');font-weight:400 900;font-display:block}
+@page { size: A4; margin: 14mm 14mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Hind Siliguri', 'Noto Sans Bengali'; color: #2b1d1f; font-size: 14px; line-height: 1.65; margin: 0; }
+h2 { font-size: 21px; color: #7a1f35; margin: 22px 0 10px; display: flex; align-items: center; gap: 10px; }
+h2 .n { background: #7a1f35; color: #fff; border-radius: 50%; width: 34px; height: 34px; display: inline-flex;
+        align-items: center; justify-content: center; font-size: 17px; flex: none; }
+h2::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, #c9a063, transparent); }
+h3 { font-size: 16px; margin: 14px 0 6px; color: #5a1426; }
+.cover { background: linear-gradient(135deg, #5a1426 0%, #7a1f35 55%, #9b3a52 100%); color: #fff; border-radius: 18px;
+         padding: 34px; position: relative; overflow: hidden; }
+.cover svg { position: absolute; right: -30px; top: -30px; width: 260px; opacity: .16; }
+.cover .tag { color: #c9a063; letter-spacing: 3px; font-size: 13px; font-weight: 700; }
+.cover h1 { font-size: 34px; margin: 8px 0 4px; line-height: 1.3; }
+.cover p { margin: 0; opacity: .9; font-size: 15px; }
+.box { background: #f8efe6; border-radius: 12px; padding: 10px 16px; margin: 10px 0; }
+.good { background: #eaf5ee; border-left: 5px solid #2f7d4f; }
+.warn { background: #fff3e6; border-left: 5px solid #c9a063; }
+.bad { background: #fbeceb; border-left: 5px solid #b8434f; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 10px 0; }
+.card { background: #f8efe6; border-radius: 12px; padding: 10px 14px; border-top: 4px solid #7a1f35; font-size: 13.5px; }
+.card b { display: block; color: #7a1f35; font-size: 15px; margin-bottom: 2px; }
+.flow { counter-reset: s; margin: 10px 0; }
+.st { display: grid; grid-template-columns: 150px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #e0d2c6; break-inside: avoid; }
+.st .k { font-weight: 700; color: #7a1f35; }
+.st .k i { display: inline-flex; width: 26px; height: 26px; border-radius: 50%; background: #c9a063; color: #fff; font-style: normal;
+           align-items: center; justify-content: center; margin-right: 6px; font-size: 13px; }
+.say { background: #fff; border: 1px solid #ead9cb; border-left: 4px solid #c9787f; border-radius: 8px; padding: 6px 10px; margin: 4px 0; }
+.obj { border: 1px solid #ead9cb; border-radius: 14px; padding: 12px 16px; margin: 12px 0; break-inside: avoid; background: #fffdfb; }
+.oh { font-size: 18px; font-weight: 700; color: #7a1f35; display: flex; align-items: center; gap: 10px; }
+.on { background: #7a1f35; color: #fff; border-radius: 8px; padding: 0 9px; font-size: 15px; }
+.says { font-size: 15.5px; font-style: italic; color: #5a1426; margin: 6px 0; padding: 4px 12px; border-left: 4px solid #c9a063; background: #f8efe6; border-radius: 6px; }
+.why { font-size: 13px; color: #5c4b4e; }
+.do { margin-top: 6px; } .do b { color: #2f7d4f; }
+.do ul { margin: 2px 0; padding-left: 20px; } .do li { margin: 3px 0; }
+.dont { margin-top: 6px; font-size: 13px; background: #fbeceb; border-radius: 8px; padding: 5px 10px; } .dont b { color: #b8434f; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 13.5px; break-inside: avoid; }
+th { background: #7a1f35; color: #fff; padding: 6px 8px; text-align: left; font-weight: 600; }
+td { padding: 6px 8px; border-bottom: 1px solid #eadfd6; vertical-align: top; }
+tr:nth-child(even) td { background: #fcf8f4; }
+.pb { page-break-before: always; }
+.small { font-size: 12.5px; color: #6b5d5f; }
+ul { margin: 4px 0; padding-left: 22px; } li { margin: 3px 0; }
+.box, .grid, .card { break-inside: avoid; }
+.foot { font-size: 12px; color: #9a8f88; margin-top: 18px; border-top: 1px solid #e6dcd3; padding-top: 6px; }
+</style></head><body>
+
+<div class="cover">
+  <svg viewBox="0 0 200 200"><path d="M60 30c10 0 18 30 18 40s-12 14-12 22 30 40 40 40 14-12 22-12 40 8 40 18-14 34-40 34C70 172 28 130 28 72c0-26 22-42 32-42z" fill="#fff"/></svg>
+  <div class="tag">PRIVATE CHOICE BD · কল গাইড</div>
+  <h1>ফোনে কাস্টমারকে কীভাবে অর্ডারে রূপান্তর করবেন</h1>
+  <p>পুরো কলের স্ক্রিপ্ট, প্রতিটা আপত্তির উত্তর, দরকষাকষির কৌশল আর ফলো-আপ — TONO HIME জেল</p>
+</div>
+
+<div class="box warn"><b>কেন এই গাইড:</b> এখন প্রায় ১২–১৩টা কলে ১টা অর্ডার হচ্ছে। এটা ৬টা কলে ১টা করতে পারলে <b>একই বিজ্ঞাপন খরচে অর্ডার দ্বিগুণ</b>।
+বিজ্ঞাপন কাস্টমারকে ফোন পর্যন্ত আনে — বিক্রি হয় আপনার কথায়।</div>
+
+<h2><span class="n">১</span>আমাদের অফার — মুখস্থ রাখুন</h2>
+<table><tr><th>অফার</th><th>দাম</th><th>ডেলিভারি</th><th>কাস্টমার মোট দেয়</th><th>প্রতি বোতল</th></tr>
+<tr><td>১ বোতল</td><td>৳২৫০</td><td>চার্জ আলাদা (প্রায় ৳১০০)</td><td>প্রায় ৳৩৫০</td><td>৳৩৫০</td></tr>
+<tr><td>২ বোতল</td><td>৳৫৫০</td><td>ফ্রি</td><td>৳৫৫০</td><td>৳২৭৫</td></tr>
+<tr><td><b>৩ বোতল (৩ ফ্লেভার)</b></td><td><b>৳৮৯৯</b></td><td>ফ্রি</td><td>৳৮৯৯</td><td>৳৩০০</td></tr></table>
+<div class="grid">
+  <div class="card"><b>পণ্যটা কী (১ লাইনে)</b>১০০ মিলি পানি-ভিত্তিক ব্যক্তিগত লুব্রিকেন্ট জেল — স্বামী-স্ত্রীর ব্যক্তিগত জীবনের স্বস্তির জন্য।</div>
+  <div class="card"><b>৪টা সুবিধা</b>আঠালো না · পানিতে সহজে ধুয়ে যায় · কাপড়ে দাগ পড়ে না · শুষ্কতাজনিত অস্বস্তি কমাতে সাহায্য করে।</div>
+  <div class="card"><b>৩টা ফ্লেভার</b>স্ট্রবেরি · ব্লুবেরি · আঙুর।</div>
+  <div class="card"><b>৩টা ভরসা</b>গোপনীয় প্যাকেট (বাইরে নাম নেই) · পণ্য দেখে টাকা · সারা দেশে ক্যাশ অন ডেলিভারি।</div>
+</div>
+
+<h2 class="pb"><span class="n">২</span>৮টা সোনালি নিয়ম</h2>
+<div class="grid">
+  <div class="card"><b>১. প্রথম ৩ সেকেন্ডে হাসিমুখ</b>গলায় হাসি শোনা যায়। ফোন ধরেই: “আসসালামু আলাইকুম, Private Choice BD থেকে বলছি, কীভাবে সাহায্য করতে পারি?”</div>
+  <div class="card"><b>২. বলার চেয়ে বেশি শুনুন</b>কাস্টমার ৬০% কথা বলবে, আপনি ৪০%। প্রশ্ন করুন, তারপর চুপ।</div>
+  <div class="card"><b>৩. দাম বলুন বড় প্যাক দিয়ে শুরু করে</b>প্রথমে ৩ বোতল ৮৯৯ বলুন, তারপর ছোটগুলো। প্রথম শোনা দামটাই মাথায় থাকে।</div>
+  <div class="card"><b>৪. আপত্তি মানে “না” না</b>আপত্তি মানে “আমাকে আরেকটু বোঝাও।” আগে মেনে নিন (“ঠিক বলেছেন”), তারপর উত্তর দিন।</div>
+  <div class="card"><b>৫. নিজে থেকে দাম কমাবেন না</b>দাম কমানো শেষ অস্ত্র, প্রথম না।</div>
+  <div class="card"><b>৬. সবসময় পরের ধাপ চান</b>প্রতিটা উত্তরের পর একটা প্রশ্ন: “কোন ফ্লেভারটা দেবো?” / “ঠিকানাটা বলবেন?”</div>
+  <div class="card"><b>৭. সম্মান আর গোপনীয়তা</b>শান্ত, ভদ্র, ডাক্তারের মতো সহজ গলা। কোনো মজা, ইঙ্গিত বা অশ্লীল শব্দ না।</div>
+  <div class="card"><b>৮. কখনো মিথ্যা না</b>“১০০% নিরাপদ”, “অরিজিনাল জাপানি”, “আজকেই অফার শেষ” — প্রমাণ ছাড়া বলবেন না। একবার ধরা পড়লে কাস্টমার আর ফেরে না।</div>
+</div>
+
+<h2><span class="n">৩</span>পুরো কল — ধাপে ধাপে</h2>
+<div class="flow">
+<div class="st"><div class="k"><i>১</i>শুভেচ্ছা</div><div><div class="say">“আসসালামু আলাইকুম, Private Choice BD থেকে বলছি। আপনি আমাদের বিজ্ঞাপন দেখে কল দিয়েছেন — কীভাবে সাহায্য করতে পারি?”</div></div></div>
+<div class="st"><div class="k"><i>২</i>জেনে নিন</div><div><div class="say">“আপনি কি আগে কখনো এই ধরনের জেল ব্যবহার করেছেন?”</div>
+  <span class="small">হ্যাঁ বললে সরাসরি দামে যান। না বললে ১ লাইনে পণ্য বুঝিয়ে দিন।</span></div></div>
+<div class="st"><div class="k"><i>৩</i>পণ্য ১ লাইনে</div><div><div class="say">“এটা ১০০ মিলি পানি-ভিত্তিক জেল — আঠালো না, পানিতে ধুয়ে যায়, কাপড়ে দাগ পড়ে না। শুষ্কতার অস্বস্তি কমাতে সাহায্য করে।”</div></div></div>
+<div class="st"><div class="k"><i>৪</i>দাম (বড় দিয়ে শুরু)</div><div><div class="say">“আমাদের সবচেয়ে জনপ্রিয় প্যাক ৩ বোতল — স্ট্রবেরি, ব্লুবেরি, আঙুর — ৮৯৯ টাকা, ডেলিভারি একদম ফ্রি। ২ বোতল ৫৫০, ডেলিভারি ফ্রি। আর ১ বোতল ২৫০ টাকা, সাথে ডেলিভারি চার্জ।”</div></div></div>
+<div class="st"><div class="k"><i>৫</i>ভরসা দিন</div><div><div class="say">“প্যাকেট সম্পূর্ণ গোপন — বাইরে কোনো নাম নেই। আর টাকা দেবেন পণ্য হাতে পেয়ে, দেখে।”</div></div></div>
+<div class="st"><div class="k"><i>৬</i>অর্ডার চান</div><div><div class="say">“আপনার জন্য কোনটা দেবো — ৩ ফ্লেভারের প্যাকটা, নাকি ২টা?”</div>
+  <span class="small">“নেবেন কি?” না — দুইটা অপশন দিন। হ্যাঁ/না প্রশ্নে “না” বলা সহজ।</span></div></div>
+<div class="st"><div class="k"><i>৭</i>তথ্য নিন</div><div><div class="say">“আপনার নাম, পুরো ঠিকানা আর কোন এলাকা/থানা বলবেন? এই নম্বরেই কি ডেলিভারি ম্যান কল দেবে?”</div></div></div>
+<div class="st"><div class="k"><i>৮</i>পুনরায় নিশ্চিত</div><div><div class="say">“তাহলে কনফার্ম করি — ৩ বোতলের প্যাক, ৮৯৯ টাকা, ডেলিভারি ফ্রি, [ঠিকানা]। ১–৩ দিনের মধ্যে পৌঁছে যাবে।”</div></div></div>
+<div class="st"><div class="k"><i>৯</i>ধন্যবাদ</div><div><div class="say">“আমাদের উপর ভরসা রাখার জন্য ধন্যবাদ ভাই। কোনো প্রশ্ন থাকলে এই নম্বরে যেকোনো সময় কল দেবেন।”</div></div></div>
+</div>
+
+<h2><span class="n">৪</span>প্রতিটা আপত্তির উত্তর</h2>
+<p class="small">প্রতিটা আপত্তির সূত্র একই: <b>মেনে নিন → কারণ বুঝুন → উত্তর দিন → আবার অর্ডার চান।</b></p>
+<div class="obj">
+  <div class="oh"><span class="on">১</span>দাম বেশি</div>
+  <div class="says">“ভাই, দাম তো অনেক বেশি।”</div>
+  <div class="why"><b>কেন বলে:</b> বেশিরভাগ সময় দাম আসল সমস্যা না — কাস্টমার এখনো পণ্যের মূল্য বুঝতে পারেনি, বা ভয় পাচ্ছে টাকা নষ্ট হবে।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“ঠিক বলেছেন ভাই, দাম নিয়ে ভাবা স্বাভাবিক। একটু মিলিয়ে দেখেন — ৩টা বোতলে প্রতিটা পড়ে ৩০০ টাকা, ডেলিভারি চার্জ আমরাই দিচ্ছি।”</li><li>“প্রতিটা বোতল ১০০ মিলি, অনেক দিন চলে। দিনে হিসাব করলে কয়েক টাকা মাত্র।”</li><li>“আর আপনি টাকা দেবেন পণ্য হাতে পেয়ে, দেখে — পছন্দ না হলে নেবেন না। আপনার কোনো ঝুঁকি নেই।”</li><li>তারপর চুপ করে থাকুন। কাস্টমারকে ভাবতে দিন।</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “তাহলে কত দিতে পারবেন?” — এতে আপনি নিজেই দাম কমানোর দরজা খুলে দেন।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">২</span>অন্য পেজে কম দামে পাই</div>
+  <div class="says">“অন্য পেজে তো ৩টা ৩০০/৪০০ টাকায় দিচ্ছে।”</div>
+  <div class="why"><b>কেন বলে:</b> কাস্টমার তুলনা করছে — মানে সে কিনতে চায়। শুধু নিশ্চিত হতে চায় সে ঠকছে না।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“ভাই, ভালো করেছেন খোঁজ নিয়েছেন। শুধু ৩টা জিনিস মিলিয়ে নেবেন — কত মিলি, ডেলিভারি চার্জ আলাদা কিনা, আর হাতে পেয়ে দেখে টাকা দেওয়া যায় কিনা।”</li><li>“অনেকে কম দাম বলে, পরে ডেলিভারি চার্জ আলাদা নেয়। আমাদের দামে ডেলিভারি ধরা — কোনো লুকানো চার্জ নেই।”</li><li>“আমাদের বোতলের সিল আর গায়ের কোড আপনি নিজে মিলিয়ে দেখতে পারবেন। মিল না পেলে ফেরত দেবেন, এক টাকাও লাগবে না।”</li><li>“এই জিনিস শরীরে ব্যবহার করবেন — এখানে ৫০–১০০ টাকা বাঁচাতে গিয়ে ঝুঁকি নেওয়া কি ঠিক হবে, বলেন?”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “ওরা নকল বেচে / ওরা চোর।” — অন্যকে খারাপ বললে আপনাকেই কম বিশ্বাস করবে। শুধু নিজের সুবিধা বলুন।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৩</span>পরে অর্ডার করবো</div>
+  <div class="says">“আচ্ছা, পরে জানাবো / পরে অর্ডার দিবো।”</div>
+  <div class="why"><b>কেন বলে:</b> “পরে” মানে সাধারণত একটা ছোট দ্বিধা আছে যেটা সে বলছে না। সেটা বের করতে পারলেই অর্ডার।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“অবশ্যই ভাই। শুধু জানতে চাই — কোন ব্যাপারটা নিয়ে একটু ভাবছেন? দাম, নাকি প্যাকেটের গোপনীয়তা, নাকি অন্য কিছু?”</li><li>কারণটা বললে সেই আপত্তির উত্তর দিন (এই গাইডের অন্য অংশ দেখুন)।</li><li>“আজ অর্ডার দিলে কালকেই পাঠিয়ে দিতে পারি। টাকা তো দেবেন হাতে পেয়ে — শুধু নাম-ঠিকানাটা রেখে দেই?”</li><li>তারপরও না চাইলে: “ঠিক আছে ভাই, আমি কি সন্ধ্যায় একবার কল দিতে পারি?” — সময় নিয়ে নিন।</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “অফার আজকেই শেষ!” — সত্যি না হলে কখনো বলবেন না। কাস্টমার পরে জানলে আর কিনবে না।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৪</span>ভেবে দেখি / স্ত্রীর সাথে কথা বলি</div>
+  <div class="says">“একটু ভেবে দেখি” বা “বাসায় কথা বলে জানাই।”</div>
+  <div class="why"><b>কেন বলে:</b> সিদ্ধান্তে আরেকজন জড়িত, বা লজ্জা লাগছে। চাপ দিলে হারাবেন।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“খুব ভালো, দুজনে মিলে সিদ্ধান্ত নেওয়াই ভালো। আপনার স্ত্রী যদি কিছু জানতে চান, আমাকে সরাসরি কল দিতে পারেন — আমাদের আপুরাও কথা বলেন।”</li><li>“অনেকে ৩ ফ্লেভারের প্যাক নেন যাতে দুজনের পছন্দ মিলিয়ে দেখা যায় — স্ট্রবেরি, ব্লুবেরি, আঙুর।”</li><li>“আমি কি কাল সকালে একবার কল দেবো, নাকি আজ রাতে?” — দুইটা অপশন দিন, সময় ঠিক করে নিন।</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “এত ভাবার কী আছে?” — অপমান মনে হবে।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৫</span>আসল তো? নকল না তো?</div>
+  <div class="says">“এটা আসল তো? বাজারে তো অনেক নকল।”</div>
+  <div class="why"><b>কেন বলে:</b> এটা খুব ভালো প্রশ্ন — কাস্টমার সিরিয়াস। বিশ্বাস দিতে পারলেই অর্ডার।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“ভাই, এটা জিজ্ঞেস করা একদম ঠিক। পণ্য হাতে পেয়ে আগে দেখবেন — সিল ঠিক আছে কিনা, মেয়াদ লেখা আছে কিনা, বোতলের কোড মিলিয়ে দেখবেন। তারপর টাকা দেবেন।”</li><li>“পছন্দ না হলে ডেলিভারি ম্যানকেই ফেরত দিয়ে দেবেন।”</li><li>“জেলটা পানির মতো পাতলা না, একটু ঘন — হাতে নিলেই বুঝবেন।”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “১০০% অরিজিনাল / জাপানি গ্যারান্টি।” — প্রমাণ দেখাতে না পারলে এমন দাবি করবেন না। কাস্টমারকে নিজে চেক করতে বলুন — এটাই সবচেয়ে বেশি বিশ্বাস তৈরি করে।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৬</span>কোনো ক্ষতি হবে না তো?</div>
+  <div class="says">“কোনো সমস্যা বা পার্শ্বপ্রতিক্রিয়া হবে না তো?”</div>
+  <div class="why"><b>কেন বলে:</b> ভয় পাচ্ছে। সৎ উত্তর দিলে বিশ্বাস বাড়ে।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“এটা পানি-ভিত্তিক জেল — আঠালো না, পানিতে সহজে ধুয়ে যায়, কাপড়ে দাগ পড়ে না।”</li><li>“যাদের ত্বক খুব সংবেদনশীল, তারা প্রথমবার হাতের উপর অল্প লাগিয়ে দেখে নেবেন। কোনো অস্বস্তি হলে ব্যবহার করবেন না।”</li><li>“কোনো শারীরিক সমস্যা থাকলে ডাক্তারের পরামর্শ নেওয়াই ভালো।”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “১০০% নিরাপদ, কোনো পার্শ্বপ্রতিক্রিয়া নেই।” — কোনো পণ্যই সবার জন্য ১০০% না। এই কথা মিথ্যা প্রমাণ হলে কাস্টমার আর ফিরবে না।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৭</span>কেউ জানবে না তো?</div>
+  <div class="says">“প্যাকেটে কী লেখা থাকবে? ডেলিভারি ম্যান বুঝবে না তো?”</div>
+  <div class="why"><b>কেন বলে:</b> এটাই আমাদের পণ্যের সবচেয়ে বড় ভয়। এর ভালো উত্তর মানেই অর্ডার।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“একদম না ভাই। প্যাকেট সাদা/অস্বচ্ছ, বাইরে কোনো পণ্যের নাম বা ছবি নেই। কুরিয়ারে শুধু লেখা থাকে ‘Personal care’।”</li><li>“আপনি চাইলে অফিসের ঠিকানা বা যেকোনো সুবিধার ঠিকানা দিতে পারেন। ডেলিভারি ম্যান শুধু আপনাকেই ফোন দেবে।”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> এই প্রশ্নে কখনো হাসবেন না বা মজা করবেন না।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৮</span>শুধু ১টা নেবো</div>
+  <div class="says">“আচ্ছা, আপাতত ১টা দেন।”</div>
+  <div class="why"><b>কেন বলে:</b> সে কিনতে রাজি — এখন শুধু বেশি নেওয়ার সুবিধাটা দেখাতে হবে।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“অবশ্যই। শুধু একটা কথা — ১টায় ২৫০ + ডেলিভারি চার্জ, মোট প্রায় ৩৫০ পড়ে। আর ২টা নিলে ৫৫০, ডেলিভারি ফ্রি — মানে দ্বিতীয়টা প্রায় ২০০ টাকায় পাচ্ছেন।”</li><li>“বেশিরভাগ কাস্টমার ৩ ফ্লেভারের প্যাকটা নেন — ৮৯৯, ডেলিভারি ফ্রি। তিনটা স্বাদই চেখে দেখতে পারবেন।”</li><li>তারপরও ১টা চাইলে খুশি মনে ১টাই দিন। জোর করবেন না।</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> বারবার একই অফার বলে বিরক্ত করবেন না — একবার বলুন, তারপর ছেড়ে দিন।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">৯</span>ছাড় দেন / কম রাখেন</div>
+  <div class="says">“ভাই, একটু কম রাখেন না।”</div>
+  <div class="why"><b>কেন বলে:</b> দরকষাকষি বাংলাদেশে স্বাভাবিক। সে আসলে বলছে — “আমি কিনবো, শুধু জিততে চাই।”</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>প্রথমে দাম কমাবেন না। বলুন: “ভাই, দাম আমরা আগেই সবচেয়ে কম রেখেছি, তার উপর ডেলিভারি চার্জও আমরা দিচ্ছি।”</li><li>ছাড়ের বদলে কিছু চান: “৩ বোতলের প্যাক নিলে ডেলিভারি একদম ফ্রি — এটাই আমাদের সবচেয়ে ভালো দাম।”</li><li>শেষ অস্ত্র (শুধু ৩ বোতলে, শুধু একবার): “ঠিক আছে ভাই, আপনার জন্য ৫০ টাকা কম রাখলাম — তবে আজকে কনফার্ম করতে হবে।”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> ১ বা ২ বোতলে ছাড় দেবেন না — ওখানে লাভ খুব কম। আর প্রথম চাওয়াতেই ছাড় দিলে কাস্টমার আরও চাইবে।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">১০</span>আগে টাকা দিতে হবে?</div>
+  <div class="says">“অগ্রিম টাকা দিতে হবে নাকি?”</div>
+  <div class="why"><b>কেন বলে:</b> অনলাইনে ঠকার ভয়।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“না ভাই, একটা টাকাও আগে লাগবে না। পণ্য হাতে পেয়ে, দেখে, তারপর ডেলিভারি ম্যানকে টাকা দেবেন।”</li><li>(শুধু অনেক দূরের জেলায় ১ বোতলের অর্ডার, বা যার আগে পার্সেল ফেরতের রেকর্ড আছে — সেখানে ডেলিভারি চার্জটা বিকাশে আগে নেওয়া যায়।)</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> “আগে টাকা না দিলে পাঠাবো না” — এতে বেশিরভাগ কাস্টমার চলে যাবে।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">১১</span>শুধু জানতে চাই / লজ্জা পাচ্ছে</div>
+  <div class="says">কাস্টমার চুপচাপ, কম কথা বলে, “এটা কী জিনিস?” জিজ্ঞেস করে।</div>
+  <div class="why"><b>কেন বলে:</b> অনেকে আগে কখনো লুব্রিকেন্ট ব্যবহার করেনি, লজ্জা পায়।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>নরম, স্বাভাবিক গলায়, ডাক্তারের মতো সহজভাবে: “এটা স্বামী-স্ত্রীর ব্যক্তিগত জীবনের জন্য পানি-ভিত্তিক জেল। শুষ্কতার কারণে যে অস্বস্তি হয়, সেটা কমাতে সাহায্য করে।”</li><li>“অনেকেই প্রথমবার এভাবেই জিজ্ঞেস করেন, লজ্জার কিছু নেই।”</li><li>তারপর ছোট প্রশ্ন: “আপনি কি নিজের জন্য নিচ্ছেন, নাকি কাউকে উপহার দেবেন?”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> কোনো অশ্লীল শব্দ, মজা বা ইঙ্গিত — কখনো না। এতে পেজের সম্মান আর কাস্টমার দুটোই হারাবেন।</div>
+</div><div class="obj">
+  <div class="oh"><span class="on">১২</span>ডেলিভারি কবে / কোথায়</div>
+  <div class="says">“কবে পাবো? আমি তো সারাদিন অফিসে থাকি।”</div>
+  <div class="why"><b>কেন বলে:</b> সে কিনতে চায় — এখন শুধু সুবিধাটা নিশ্চিত হতে চায়।</div>
+  <div class="do"><b>যা বলবেন</b><ul><li>“ঢাকার ভেতরে সাধারণত ১–২ দিন, ঢাকার বাইরে ২–৪ দিন। ডেলিভারির আগে ডেলিভারি ম্যান আপনাকে ফোন দেবে।”</li><li>“অফিসের ঠিকানাও দিতে পারেন — প্যাকেট দেখে কেউ কিছু বুঝবে না।”</li></ul></div>
+  <div class="dont"><b>যা বলবেন না:</b> নিশ্চিত না হয়ে নির্দিষ্ট দিনের কথা দেবেন না। আপনার কুরিয়ারের আসল সময়টাই বলুন।</div>
+</div>
+
+<h2 class="pb"><span class="n">৫</span>দরকষাকষির ৮টা কৌশল</h2>
+<table><tr><th>কৌশল</th><th>কীভাবে করবেন</th><th>উদাহরণ</th></tr>
+<tr><td><b>বড় দাম আগে</b></td><td>প্রথমে ৩ বোতল ৮৯৯ বলুন। তারপর ২৫০ শুনলে সস্তা মনে হয়।</td><td>“সবচেয়ে জনপ্রিয় প্যাক ৮৯৯…”</td></tr>
+<tr><td><b>দুইটা অপশন</b></td><td>হ্যাঁ/না প্রশ্ন না করে দুইটার মধ্যে বেছে নিতে দিন।</td><td>“স্ট্রবেরি দেবো, নাকি ৩ ফ্লেভারই?”</td></tr>
+<tr><td><b>চুপ থাকা</b></td><td>দাম বলার বা অর্ডার চাওয়ার পর চুপ। যে আগে কথা বলে, সে ছাড় দেয়।</td><td>দাম বলুন… ৩–৪ সেকেন্ড অপেক্ষা।</td></tr>
+<tr><td><b>ছাড়ের বদলে কিছু নিন</b></td><td>কম দামে দিলে বড় প্যাক বা আজকের কনফার্ম চান।</td><td>“৫০ টাকা কম রাখবো, তবে ৩টার প্যাক আর আজকেই কনফার্ম।”</td></tr>
+<tr><td><b>কাস্টমারের কথা ফিরিয়ে বলা</b></td><td>সে যা বলেছে সেটা আবার বলুন — বুঝবে আপনি শুনছেন।</td><td>“মানে আপনি গোপনীয়তা নিয়ে চিন্তিত, তাই তো?”</td></tr>
+<tr><td><b>ঝুঁকি সরিয়ে দিন</b></td><td>“দেখে টাকা” বারবার মনে করিয়ে দিন — কেনার ভয় কমে।</td><td>“পছন্দ না হলে নেবেন না, এক টাকাও লাগবে না।”</td></tr>
+<tr><td><b>অন্যদের কথা (সত্যি হলে)</b></td><td>বেশিরভাগ কাস্টমার কী নেয় সেটা বলুন।</td><td>“বেশিরভাগ কাস্টমার ৩ ফ্লেভারের প্যাক নেন।”</td></tr>
+<tr><td><b>অর্ডার হয়ে গেছে ধরে নিন</b></td><td>“নেবেন?” না বলে পরের ধাপের প্রশ্ন করুন।</td><td>“ঠিকানাটা কোথায় পাঠাবো?”</td></tr>
+</table>
+<div class="box bad"><b>দাম কমানোর সীমা:</b> শুধু ৩ বোতলের প্যাকে, শুধু একবার, সর্বোচ্চ ৳৫০। ১ বা ২ বোতলে ছাড় না — ওখানে লাভ খুব কম।</div>
+
+<h2><span class="n">৬</span>ফলো-আপ — “পরে জানাবো” কাস্টমার</h2>
+<table><tr><th>কখন</th><th>কী করবেন</th></tr>
+<tr><td>কল শেষে সাথে সাথে</td><td>খাতায় লিখুন: নাম, নম্বর, কোন প্যাকে আগ্রহ, কেন দেরি করছে, কখন কল দেবেন।</td></tr>
+<tr><td>একই দিন সন্ধ্যা/রাত</td><td>১ম ফলো-আপ কল: “ভাই, সকালে কথা হয়েছিল — আপনার জন্য প্যাকটা রেখে দেবো?”</td></tr>
+<tr><td>পরের দিন</td><td>২য় ও শেষ কল। না ধরলে একটা SMS/WhatsApp: “Private Choice BD — আপনার প্রশ্নের উত্তর দিতে আমরা পাশে আছি। অর্ডার করতে কল করুন: 01612-237962”</td></tr>
+<tr><td>তারপর</td><td>আর বিরক্ত করবেন না। ২টা কলের বেশি করলে কাস্টমার নম্বর ব্লক করে।</td></tr>
+</table>
+
+<div style="break-inside: avoid"><h2><span class="n">৭</span>যা কখনো বলবেন না</h2>
+<div class="grid">
+  <div class="card"><b>✗ “১০০% নিরাপদ / কোনো পার্শ্বপ্রতিক্রিয়া নেই”</b>বলুন: “সংবেদনশীল ত্বক হলে আগে অল্প লাগিয়ে দেখে নেবেন।”</div>
+  <div class="card"><b>✗ “অরিজিনাল / জাপানি গ্যারান্টি”</b>বলুন: “হাতে পেয়ে সিল, মেয়াদ, কোড মিলিয়ে তারপর টাকা দেবেন।”</div>
+  <div class="card"><b>✗ অশ্লীল শব্দ, ইঙ্গিত, মজা</b>বলুন: “স্বামী-স্ত্রীর ব্যক্তিগত জীবনের স্বস্তির জন্য।”</div>
+  <div class="card"><b>✗ “আমি ডাক্তার / ডাক্তার বলেছেন”</b>বলুন: “কোনো শারীরিক সমস্যা থাকলে ডাক্তারের পরামর্শ নেবেন।”</div>
+  <div class="card"><b>✗ অন্য পেজকে চোর/নকল বলা</b>বলুন: “আপনি নিজে মিলিয়ে দেখবেন — আমাদের দামে কোনো লুকানো চার্জ নেই।”</div>
+  <div class="card"><b>✗ “আজকেই অফার শেষ” (সত্যি না হলে)</b>বলুন: “আজ অর্ডার দিলে কালই পাঠিয়ে দিতে পারি।”</div>
+</div></div>
+
+<h2><span class="n">৮</span>প্রতিদিনের হিসাব — যা মাপা যায়, তাই বাড়ে</h2>
+<table><tr><th>তারিখ</th><th>মোট কল</th><th>অর্ডার</th><th>৩ বোতল</th><th>২ বোতল</th><th>১ বোতল</th><th>“দাম বেশি”</th><th>“পরে”</th><th>“অন্য পেজ”</th><th>অন্য কারণ</th></tr>
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<div class="box good"><b>লক্ষ্য:</b> প্রতি ৬টা কলে ১টা অর্ডার, আর অর্ধেক অর্ডার ৩ বোতলের। এক সপ্তাহ পর দেখুন সবচেয়ে বেশি কোন আপত্তি আসছে —
+সেটার উত্তর আরও ভালো করুন। একই আপত্তি বারবার এলে আমাকে জানান — দাম বা অফার বদলাতে হতে পারে।</div>
+
+<h3>প্রতিদিন ১০ মিনিট অনুশীলন</h3>
+<ul>
+<li>আয়নার সামনে ধাপ ৪ (দাম বলা) আর ধাপ ৬ (অর্ডার চাওয়া) ৫ বার জোরে বলুন — যতক্ষণ না স্বাভাবিক শোনায়।</li>
+<li>কাউকে কাস্টমার সাজিয়ে প্রতিদিন ৩টা আপত্তি প্র্যাকটিস করুন: “দাম বেশি”, “অন্য পেজে কম”, “পরে জানাবো”।</li>
+<li>দিনের সবচেয়ে ভালো আর সবচেয়ে খারাপ কলটা মনে করে লিখুন — কোথায় অর্ডার হলো, কোথায় হারালেন।</li>
+<li>নিজের একটা কল রেকর্ড করে শুনুন (কাস্টমারের অনুমতি নিয়ে) — গলার টোন আর কতবার আপনি কাস্টমারকে থামিয়েছেন খেয়াল করুন।</li>
+</ul>
+<div class="foot">Private Choice BD · কল গাইড · ২২ অক্টোবর ২০২৬ · শুধু ভেতরের ব্যবহারের জন্য</div>
+</body></html>

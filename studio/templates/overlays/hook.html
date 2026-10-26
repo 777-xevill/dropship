@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+{{ font_css() }}
+html,body{margin:0;width:{{W}}px;height:{{H}}px;background:transparent;overflow:hidden}
+.wrap{position:absolute;left:0;right:0;top:{{ top|default(215) }}px;display:flex;justify-content:center;padding:0 70px}
+.t{max-width:{{ W - 140 }}px;text-align:center;font-family:'Anek Bangla','Hind Siliguri',sans-serif;
+   font-weight:700;font-size:{{ size|default(66) }}px;line-height:1.62;letter-spacing:-.3px}
+.t span{display:inline;padding:.06em .42em .12em;border-radius:20px;
+   -webkit-box-decoration-break:clone;box-decoration-break:clone;
+   {% if style == 'brand' %}background:{{ c.primary }};color:#fff;
+   {% elif style == 'yellow' %}background:#FFE14D;color:#111;
+   {% else %}background:#fff;color:#111;{% endif %}
+   box-shadow:0 6px 22px rgba(0,0,0,.18)}
+</style></head><body><div class="wrap"><div class="t"><span>{{ text }}</span></div></div></body></html>

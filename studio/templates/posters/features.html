@@ -1,0 +1,32 @@
+{% extends "posters/_base.html" %}
+{# Feature cards: big title, numbered benefit cards, product hero (ref: "Realme Buds T110") #}
+{% block style %}
+body{background:linear-gradient(180deg,#efefef 0%, #e4e4e4 100%)}
+.brand{left:70px;top:70px;background:var(--p);color:#fff;padding:10px 26px;border-radius:10px;font-weight:700;font-size:32px}
+.more{right:70px;top:78px;background:var(--a);color:#111;padding:8px 22px;font-size:24px}
+.title{left:70px;top:160px;width:{{ W - 140 }}px;font-weight:800;line-height:1.12;letter-spacing:-1px}
+.title .l1{font-size:{{ 96 if (headline|length) < 16 else 78 }}px;color:#141414;display:block}
+.title .l2{font-size:{{ 96 if (headline|length) < 16 else 78 }}px;color:var(--p);display:block}
+.sub{left:70px;top:{{ 160 + 250 }}px;width:{{ (W*0.62)|int }}px;color:#333;font-weight:500;font-size:32px;line-height:1.35}
+.cards{left:70px;top:{{ (H*0.43)|int }}px;width:{{ (W*0.47)|int }}px;display:flex;flex-direction:column;gap:18px}
+.card{position:relative;background:var(--a);border-radius:22px;padding:22px 90px 22px 28px;min-height:120px;box-shadow:0 10px 26px rgba(0,0,0,.08)}
+.card:nth-child(2){background:color-mix(in srgb, var(--a) 82%, #fff)}
+.card:nth-child(3){background:color-mix(in srgb, var(--a) 64%, #fff)}
+.card .k{font-weight:800;font-size:36px;color:#141414;line-height:1.22}
+.card .n{position:absolute;right:22px;bottom:6px;font-family:'Poppins';font-weight:800;font-size:60px;color:rgba(0,0,0,.18)}
+.hero{right:-30px;top:{{ (H*0.41)|int }}px;width:{{ (W*0.52)|int }}px;height:{{ (H*0.46)|int }}px;object-fit:contain;object-position:right center}
+.cta{right:60px;bottom:58px;background:var(--p);color:#fff;padding:18px 34px;font-size:36px}
+.cta .ph{font-family:'Poppins';font-weight:700}
+.page{left:70px;bottom:66px;color:#555;font-weight:600;font-size:28px}
+{% endblock %}
+{% block body %}
+<div class="abs brand">{{ brand_name }}</div>
+{% if badge %}<div class="abs pill more">{{ badge }}</div>{% endif %}
+{% set words = headline.split(' ') %}{% set half = ((words|length)/2)|round(0,'ceil')|int %}
+<div class="abs title"><span class="l1">{{ words[:half]|join(' ') }}</span><span class="l2">{{ words[half:]|join(' ') }}</span></div>
+{% if sub %}<div class="abs sub">{{ sub }}</div>{% endif %}
+<div class="abs cards">{% for f in features[:3] %}<div class="card"><div class="k">{{ f }}</div><div class="n">0{{ loop.index }}</div></div>{% endfor %}</div>
+<img class="abs hero shadow" src="{{ product|img }}">
+<div class="abs pill cta">📞 {% if phone %}<span class="ph">{{ phone }}</span>{% else %}{{ cta }}{% endif %}</div>
+{% if page %}<div class="abs page">{{ page }}</div>{% endif %}
+{% endblock %}

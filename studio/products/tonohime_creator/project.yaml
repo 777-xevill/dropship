@@ -1,0 +1,163 @@
+# ============================================================================
+#  STUDIO PROJECT FILE  -  edit freely (Bangla is fine). Re-run the commands after editing.
+#  script.hooks : first 2-3 seconds. Each hook = one video variant.
+#  script.body  : the same for every variant.  visual: talk | product | photo:<file> | scene:<name>
+#  scenes       : English prompts for the AI images of your character with this product.
+#  brand.show_price: false  ->  no price anywhere; CTA asks people to call.
+# ============================================================================
+character: creator
+formats:
+- selfie
+- greenscreen
+- faceless
+script_style: explainer
+product:
+  name: TONO HIME Water-based Gel
+  name_bn: টোনো হিমে ওয়াটার-বেসড জেল
+  short_name: TONO HIME
+  what_it_is: 100 ml water-based personal lubricant gel (ব্যক্তিগত লুব্রিকেন্ট জেল) for married adults 18+. The presenter must NAME the category plainly ('লুব্রিকেন্ট জেল', 'স্বামী-স্ত্রীর ব্যক্তিগত জীবনের জন্য', 'দাম্পত্য জীবনের স্বস্তি') so viewers who have never heard of it understand what it is, but never describes the sexual act, body parts, pleasure, stamina or performance. Educational, calm, respectful tone. Presenter wears a stethoscope as a style accessory but is NOT a doctor and never says or implies she is.
+  benefits:
+  - পানি-ভিত্তিক, আঠালো না
+  - পানিতে সহজে ধুয়ে যায়
+  - কাপড়ে দাগ পড়ে না
+  - শুষ্কতাজনিত অস্বস্তি কমাতে সাহায্য করে
+  - '৩টি সুগন্ধ: স্ট্রবেরি, ব্লুবেরি, আঙুর'
+  proof:
+  - প্যাকেটের বাইরে পণ্যের নাম থাকে না (গোপনীয় প্যাকেজিং)
+  - পণ্য হাতে পেয়ে দেখে টাকা দেওয়া যায় (ক্যাশ অন ডেলিভারি)
+  - সারা দেশে ফ্রি ডেলিভারি
+  - কল করলেই দাম ও অর্ডারের বিস্তারিত জানানো হয়
+  avoid:
+  - any price or money amount
+  - ১০০% নিরাপদ / কোনো পার্শ্বপ্রতিক্রিয়া নেই
+  - জাপানি / অরিজিনাল
+  - sex act, pleasure, performance, stamina, 'time' or enhancement claims
+  - body parts, banana/fruit or any other innuendo
+  - asking the viewer about their body or health problems
+  - claiming or implying the presenter is a doctor, or that a doctor recommends it
+  - treatment or cure claims
+  - পানির মতো পাতলা বা হালকা বলা যাবে না (gel is thicker than water, that is a quality sign)
+  audience: men and women 30-70 in Bangladesh, mostly men; most have never used or understood a lubricant, so explain what it is in one simple sentence; privacy and convenience focus
+  hero_photo: photos/bottle_clear.png
+  broll_photos:
+  - photos/texture.png
+  - photos/bottles.png
+  no_cutout:
+  - bottles.png
+  - texture.png
+brand:
+  page: Private Choice BD
+  phone: 01612-237962
+  show_price: false
+  price_text: ''
+  cta: দাম ও অর্ডারের জন্য এখনই কল করুন
+  badges:
+  - গোপনীয় প্যাকেজিং
+  - পণ্য দেখে টাকা
+  - ফ্রি ডেলিভারি
+  colors:
+    primary: ''
+music: ''
+voice_speed: 1.08
+caption_style: pop
+title_style: white
+sfx: false
+scenes:
+  dhaka_oldtown: the person from image 1 holding the product from image 2 low at her side, standing on a busy Old Dhaka street with colourful cycle rickshaws and old buildings behind her, smiling softly at the camera, golden afternoon light, realistic smartphone photo, vertical 9:16, wearing a stylish Gulshan-girl look - a pastel mint embroidered modern kurti with a soft ivory chiffon dupatta, small gold earrings, a stethoscope worn loosely around her neck as an accessory (no white coat, no doctor uniform).
+  selfie_a: the person from image 1 holding the product from image 2 close to her face, filming a casual selfie video with her phone at arm's length, looking into the lens, natural expression mid-sentence, on a walkway beside Gulshan Lake in Dhaka with trees and apartment towers behind, soft morning light, realistic smartphone photo, vertical 9:16, wearing a stylish Gulshan-girl look - a pastel mint embroidered modern kurti with a soft ivory chiffon dupatta, small gold earrings, a stethoscope worn loosely around her neck as an accessory (no white coat, no doctor uniform).
+  selfie_b: the person from image 1 holding the product from image 2, filming a casual selfie video with her phone at arm's length at Dhanmondi Lake side bench with trees and city skyline behind, soft afternoon lighting, realistic smartphone photo, vertical 9:16, wearing a stylish Gulshan-girl look - a pastel mint embroidered modern kurti with a soft ivory chiffon dupatta, small gold earrings, a stethoscope worn loosely around her neck as an accessory (no white coat, no doctor uniform).
+  greenscreen: the person from image 1, waist-up, talking to camera with relaxed hand gestures, plain light grey studio wall background, even soft light, realistic, vertical 9:16, wearing a stylish Gulshan-girl look - a pastel mint embroidered modern kurti with a soft ivory chiffon dupatta, small gold earrings, a stethoscope worn loosely around her neck as an accessory (no white coat, no doctor uniform).
+  poster_hero: the person from image 1 holding the product from image 2 out toward the camera with a confident smile, clean bright studio background in soft blue and white hues, commercial photo, vertical 4:5, wearing a stylish Gulshan-girl look - a pastel mint embroidered modern kurti with a soft ivory chiffon dupatta, small gold earrings, a stethoscope worn loosely around her neck as an accessory (no white coat, no doctor uniform).
+  product_scene: the product from image 2 alone, styled on a clear frosted acrylic pedestal with subtle soft water ripples in the foreground, premium e-commerce hero shot, soft shadows, clean minimal background, vertical 4:5
+script:
+  hooks:
+  - id: h01
+    pattern: problem_callout
+    say: বিবাহিতদের জন্য লুব্রিকেন্ট জেল কী? আজ সহজ ভাষায় বলছি।
+    text: লুব্রিকেন্ট জেল আসলে কী?
+    visual: talk
+  - id: h02
+    pattern: curiosity_gap
+    say: যে জিনিসটা নিয়ে কেউ খোলাখুলি বলে না, আজ আমি বলছি।
+    text: যা কেউ খোলাখুলি বলে না
+    visual: talk
+  - id: h03
+    pattern: before_after
+    say: শুষ্কতার অস্বস্তি সরিয়ে ব্যক্তিগত জীবনে স্বস্তি আনা এখন সহজ।
+    text: অস্বস্তি দূর করে সহজ স্বস্তি
+    visual: talk
+  - id: h04
+    pattern: social_proof
+    say: ফার্মেসিতে চাইতে সংকোচ? এখন বাসায় বসেই অর্ডার করুন।
+    text: সংকোচ ছাড়াই, বাসায় বসে
+    visual: talk
+  - id: h05
+    pattern: demonstration
+    say: হাতে নিলেই বুঝবেন এটি একদম পানি-ভিত্তিক আর আঠালো না।
+    text: পানি-ভিত্তিক ও আঠালোহীন জেল
+    visual: product
+  - id: h06
+    pattern: objection_first
+    say: অনেকেই ভাবেন লুব্রিকেন্ট জেল ব্যবহার করলে কাপড়ে দাগ পড়ে।
+    text: কাপড়ে কোনো দাগ পড়ে না
+    visual: talk
+  - id: h07
+    pattern: us_vs_them
+    say: ভারী তেল চিটচিটে করে, কিন্তু পানি-ভিত্তিক জেল সহজে পরিষ্কার হয়।
+    text: তেল নয় পানি-ভিত্তিক সমাধান
+    visual: product
+  - id: h08
+    pattern: specific_number
+    say: টোনো হিমে জেলের ৩টি বিশেষ সুবিধার কথা আজ বলবো।
+    text: টোনো হিমে জেলের ৩টি গুণ
+    visual: talk
+  - id: h09
+    pattern: pattern_break
+    say: লজ্জা বা সংকোচ না রেখে সঠিক জিনিসটি জানা জরুরি।
+    text: সংকোচ ছেড়ে জেনে নিন সমাধান
+    visual: talk
+  - id: h10
+    pattern: curiosity_gap
+    say: স্বামী-স্ত্রীর ব্যক্তিগত জীবনের একটি দরকারি জিনিসের সাথে পরিচয় করিয়ে দিই।
+    text: দাম্পত্যের একটি প্রয়োজনীয় জেল
+    visual: talk
+  body:
+  - id: b01
+    say: এটা স্বামী-স্ত্রীর ব্যক্তিগত জীবনের স্বস্তির জন্য একটা পানি-ভিত্তিক জেল।
+    visual: talk
+    text: স্বামী-স্ত্রীর ব্যক্তিগত স্বস্তির জেল
+  - id: b02
+    say: টোনো হিমে আঠালো না, কাপড়ে দাগ পড়ে না, পানিতে সহজে ধুয়ে যায়।
+    visual: talk
+    text: আঠালো না • দাগ পড়ে না
+  - id: b03
+    say: প্যাকেটের বাইরে কিছু লেখা থাকে না, সারা দেশে ফ্রি ডেলিভারি, দেখে টাকা দিন।
+    visual: scene:selfie_b
+    text: গোপনীয় প্যাকেট • ফ্রি ডেলিভারি
+  cta:
+    say: দাম জানতে এখনই কল করুন, নম্বর স্ক্রিনে দেওয়া আছে।
+    text: 'কল করুন: ০১৬১২-২৩৭৯৬২'
+poster:
+  headline: দাম্পত্য জীবনের স্বস্তিদায়ক সমাধান
+  sub: টোনো হিমে পানি-ভিত্তিক লুব্রিকেন্ট জেল ব্যক্তিগত স্বস্তির জন্য
+  features:
+  - পানি-ভিত্তিক ও মসৃণ
+  - কাপড়ে দাগ পড়ে না
+  - পানিতে সহজে পরিষ্কার
+  badge: ক্যাশ অন ডেলিভারি
+  big_word: স্বস্তি
+  cta: অর্ডার করতে এখনই কল করুন
+ad_copy:
+  primary_text: 'দাম্পত্য জীবনে শুষ্কতাজনিত অস্বস্তি কমাতে সহায়ক টোনো হিমে ওয়াটার-বেসড জেল।
+
+    ✔ পানি-ভিত্তিক ফর্মুলা, তাই একেবারেই আঠালো হয় না
+
+    ✔ পানিতে সহজেই ধুয়ে যায় এবং কাপড়ে কোনো দাগ ফেলে না
+
+    ✔ প্যাকেটের বাইরে পণ্যের নাম ছাড়া শতভাগ গোপনীয় ডেলিভারি
+
+    ✔ পণ্য হাতে পেয়ে দেখে মূল্য পরিশোধের সুবিধা
+
+    দাম ও অর্ডারের বিস্তারিত জানতে এখনই কল করুন: ০১৬১২-২৩৭৯৬২'
+  headline: টোনো হিমে লুব্রিকেন্ট জেল - কল করুন
+

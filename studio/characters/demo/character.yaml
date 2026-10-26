@@ -1,0 +1,21 @@
+# Character bible. Edit freely. identity = what every image prompt must keep.
+# voice.id = her designed Gemini voice (expires after 1 year unused). voice.name = fallback prebuilt voice.
+name: demo
+display_name: মিতু
+gender: female
+age: mid-30s
+vibe: Warm, trustworthy, approachable, natural, relatable
+address_viewers_as: আপুরা
+identity: Bangladeshi woman in her mid-30s with warm medium-brown skin and an oval face. She has expressive, dark brown almond-shaped eyes, soft natural eyebrows, and a broad, friendly smile showing straight white teeth. Features include a subtle gold nose stud on her right nostril. Her jet-black hair is long, parted off-center, and styled in a loose side plait. She has an average, natural build.
+outfit: Teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder.
+settings:
+- Cozy Dhaka living room seated on a patterned sofa near a full bookshelf.
+- Sunny apartment balcony corner framed by potted green plants and sheer curtains.
+- Sunlit wooden dining table with a hot tea cup and open journal.
+voice:
+  engine: gemini
+  name: Sulafat
+  style: natural, warm and friendly, conversational Bangladeshi Bangla, like talking to a friend on a phone video
+  edge_voice: bn-BD-NabanitaNeural
+  allow_edge_fallback: false
+  id: voice_yxew5r60x02z

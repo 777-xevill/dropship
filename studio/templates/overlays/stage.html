@@ -1,0 +1,13 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:{{W}}px;height:{{H}}px;overflow:hidden}
+body{background:radial-gradient(120% 75% at 50% {{ ((cy|default(0.43))*100 - 3)|round(1) }}%, {{ c.light }} 0%, {{ c.mid }} 48%, {{ c.primary }} 100%)}
+.ring{position:absolute;left:50%;top:{{ (H*(cy|default(0.43)))|int }}px;width:{{ (W*1.25)|int }}px;height:{{ (W*1.25)|int }}px;transform:translate(-50%,-50%);
+  border-radius:50%;border:2px solid rgba(255,255,255,.25)}
+.ring.r2{width:{{ (W*0.9)|int }}px;height:{{ (W*0.9)|int }}px;border-color:rgba(255,255,255,.18)}
+.disc{position:absolute;left:50%;top:{{ (H*(cy|default(0.43)))|int }}px;width:{{ (W*0.78)|int }}px;height:{{ (W*0.78)|int }}px;transform:translate(-50%,-50%);
+  border-radius:50%;background:radial-gradient(circle at 50% 40%, rgba(255,255,255,.55), rgba(255,255,255,0) 70%)}
+.podium{position:absolute;left:50%;top:{{ (H*((cy|default(0.43)) + (pod|default(0.175))))|int }}px;width:{{ (W*0.74)|int }}px;height:120px;transform:translateX(-50%);
+  border-radius:50%;background:radial-gradient(ellipse at 50% 35%, rgba(255,255,255,.9), rgba(255,255,255,.25) 60%, rgba(255,255,255,0) 72%)}
+.grain{position:absolute;inset:0;opacity:.06;background-image:repeating-radial-gradient(circle at 17% 32%, #000 0 1px, transparent 1px 3px)}
+</style></head><body><div class="ring"></div><div class="ring r2"></div><div class="disc"></div><div class="podium"></div><div class="grain"></div></body></html>

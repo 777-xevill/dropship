@@ -1,0 +1,102 @@
+# ============================================================================
+#  STUDIO PROJECT FILE  -  edit freely (Bangla is fine). Re-run the commands after editing.
+#  script.hooks : first 2-3 seconds. Each hook = one video variant.
+#  script.body  : the same for every variant.  visual: talk | product | photo:<file> | scene:<name>
+#  scenes       : English prompts for the AI images of your character with this product.
+#  brand.show_price: false  ->  no price anywhere; CTA asks people to call.
+# ============================================================================
+character: demo
+formats:
+- greenscreen
+script_style: explainer
+product:
+  name: TONO HIME Water-based Gel
+  name_bn: টোনো হিমে ওয়াটার-বেসড জেল
+  short_name: TONO HIME
+  what_it_is: 100 ml water-based personal lubricant gel (strawberry / blueberry / grape scent) for married couples' comfort. Pharmacist-like, respectful, health and comfort focus only.
+  benefits:
+  - পানি-ভিত্তিক, আঠালো না
+  - পানিতে সহজে ধুয়ে যায়
+  - কাপড়ে দাগ পড়ে না
+  - শুষ্কতাজনিত অস্বস্তি কমাতে সাহায্য করে
+  - '৩টি সুগন্ধ: স্ট্রবেরি, ব্লুবেরি, আঙুর'
+  proof:
+  - প্যাকেটের বাইরে পণ্যের নাম থাকে না (গোপনীয় প্যাকেজিং)
+  - পণ্য হাতে পেয়ে দেখে টাকা দেওয়া যায় (ক্যাশ অন ডেলিভারি)
+  - সারা দেশে ফ্রি ডেলিভারি
+  - কল করলেই দাম ও অর্ডারের বিস্তারিত জানানো হয়
+  avoid:
+  - any price or money amount
+  - ১০০% নিরাপদ / কোনো পার্শ্বপ্রতিক্রিয়া নেই
+  - জাপানি / অরিজিনাল
+  - sex, pleasure, performance, 'time' or enhancement claims
+  - asking the viewer about their body or health problems
+  - suggestive words or innuendo
+  - পানির মতো পাতলা বা হালকা বলা যাবে না (gel is thicker than water, that is a quality sign)
+  audience: men 25-45 (husbands), speaking man-to-man style but presented by a woman; privacy and convenience focus
+  hero_photo: photos/bottle_clear.png
+  broll_photos:
+  - photos_web/othoba_grape.jpeg
+  - photos/texture.png
+  no_cutout:
+  - texture.png
+brand:
+  page: Private Choice BD
+  phone: 01612-237962
+  show_price: false
+  price_text: ''
+  cta: দাম ও অর্ডারের জন্য এখনই কল করুন
+  badges:
+  - গোপনীয় প্যাকেজিং
+  - পণ্য দেখে টাকা
+  - ফ্রি ডেলিভারি
+  colors:
+    primary: ''
+music: ''
+caption_style: pop
+title_style: white
+sfx: true
+scenes:
+  selfie_a: the person from image 1 holding the product from image 2 close to her face, filming a casual selfie video with her phone at arm's length, looking into the lens, natural expression mid-sentence, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, in a cozy Dhaka living room seated on a patterned sofa near a full bookshelf, soft natural light, realistic smartphone photo, vertical 9:16
+  selfie_b: the person from image 1 holding the product from image 2, filming a casual selfie video at a slightly low angle, looking into the lens, natural expression mid-sentence, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, in a sunny apartment balcony corner framed by potted green plants and sheer curtains, soft natural light, realistic smartphone photo, vertical 9:16
+  greenscreen: the person from image 1, waist-up, talking to camera with relaxed hand gestures, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, plain light grey studio wall background, even soft light, realistic, vertical 9:16
+  poster_hero: the person from image 1 holding the product from image 2 out toward the camera with a confident smile, wearing a teal embroidered cotton kurta paired with a cream and blue floral printed dupatta draped over the shoulder, clean bright studio background in the product's colours, commercial photo, vertical 4:5
+  product_scene: the product from image 2 alone, styled on a surface that fits it, premium e-commerce hero shot, soft shadows, no text, vertical 4:5
+script:
+  hooks:
+  - id: h01
+    pattern: problem_callout
+    visual: talk
+    say: ভাইয়ারা, ফার্মেসিতে গিয়ে চাইতে লজ্জা লাগে?
+    text: ভাইয়ারা, এটা আপনাদের জন্য
+  body:
+  - id: b01
+    visual: talk
+    text: বাসায় বসেই অর্ডার
+    say: এখন আর যেতে হবে না, বাসায় বসেই অর্ডার করুন।
+  - id: b02
+    visual: talk
+    text: গোপনীয় প্যাকেজিং
+    say: প্যাকেটের বাইরে কিছুই লেখা থাকে না, পণ্য দেখে টাকা দিন।
+  cta:
+    say: অর্ডার করতে এখনই স্ক্রিনের নম্বরে কল করুন।
+    text: কল করুন, গোপনীয় ডেলিভারি
+poster: {}
+ad_copy:
+  primary_text: 'বিবাহিত জীবনে শুষ্কতাজনিত অস্বস্তি কমিয়ে দৈনন্দিন স্বস্তি বজায় রাখতে বেছে নিন টোনো হিমে ওয়াটার-বেসড জেল।
+
+
+    ✔ পানি-ভিত্তিক ফর্মুলা হওয়ায় কোনো আঠালো ভাব থাকে না
+
+    ✔ ব্যবহারের পর সাধারণ পানিতেই সহজে পরিষ্কার হয়ে যায়
+
+    ✔ কাপড়ে কোনো প্রকার দাগ কিংবা ছোপ ফেলে না
+
+    ✔ স্ট্রবেরি, ব্লুবেরি ও আঙুর—রয়েছে ৩টি মিষ্টি সুবাস
+
+    ✔ সম্পূর্ণ গোপনীয় প্যাকেজিং ও সারা দেশে ফ্রি ডেলিভারি
+
+
+    পণ্য হাতে পেয়ে দেখে নেওয়ার সুব্যবস্থা রয়েছে। বিস্তারিত দাম ও অর্ডারের জন্য এখনই কল করুন: ০১৬১২-২৩৭৯৬২'
+  headline: টোনো হিমে ওয়াটার-বেসড জেল
+voice_speed: 1.08

@@ -1,0 +1,160 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Anek Bangla';src:url('file:///E:/Dropship/studio/assets/fonts/AnekBangla-VF.ttf');font-weight:100 800;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-SemiBold.ttf');font-weight:600;font-display:block}
+@font-face{font-family:'Hind Siliguri';src:url('file:///E:/Dropship/studio/assets/fonts/HindSiliguri-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Noto Sans Bengali';src:url('file:///E:/Dropship/studio/assets/fonts/NotoSansBengali-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Noto Serif Bengali';src:url('file:///E:/Dropship/studio/assets/fonts/NotoSerifBengali-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Baloo Da 2';src:url('file:///E:/Dropship/studio/assets/fonts/BalooDa2-VF.ttf');font-weight:400 800;font-display:block}
+@font-face{font-family:'Galada';src:url('file:///E:/Dropship/studio/assets/fonts/Galada-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Tiro Bangla';src:url('file:///E:/Dropship/studio/assets/fonts/TiroBangla-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Anton';src:url('file:///E:/Dropship/studio/assets/fonts/Anton-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Bebas Neue';src:url('file:///E:/Dropship/studio/assets/fonts/BebasNeue-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Regular.ttf');font-weight:400;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Medium.ttf');font-weight:500;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-SemiBold.ttf');font-weight:600;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-ExtraBold.ttf');font-weight:800;font-display:block}
+@font-face{font-family:'Poppins';src:url('file:///E:/Dropship/studio/assets/fonts/Poppins-Black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:'Montserrat';src:url('file:///E:/Dropship/studio/assets/fonts/Montserrat-VF.ttf');font-weight:100 900;font-display:block}
+@font-face{font-family:'Playfair Display';src:url('file:///E:/Dropship/studio/assets/fonts/PlayfairDisplay-VF.ttf');font-weight:400 900;font-display:block}
+@page { size: A4; margin: 14mm 14mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: Inter, 'Hind Siliguri', sans-serif; color: #2b1d1f; font-size: 13.5px; line-height: 1.6; margin: 0; }
+h2 { font-size: 20px; color: #7a1f35; margin: 24px 0 10px; display: flex; align-items: center; gap: 10px; letter-spacing: -.2px; }
+h2 .n { background: #7a1f35; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex;
+        align-items: center; justify-content: center; font-size: 14px; flex: none; }
+h2::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, #c9a063, transparent); }
+h3 { font-size: 14.5px; margin: 14px 0 6px; color: #5a1426; }
+.cover { background: linear-gradient(135deg, #5a1426 0%, #7a1f35 55%, #9b3a52 100%); color: #fff; border-radius: 18px;
+         padding: 34px 34px 28px; position: relative; overflow: hidden; }
+.cover svg { position: absolute; right: -40px; top: -40px; width: 300px; opacity: .18; }
+.cover .tag { color: #c9a063; letter-spacing: 3px; font-size: 12px; font-weight: 700; }
+.cover h1 { font-size: 32px; margin: 8px 0 4px; line-height: 1.2; letter-spacing: -.5px; }
+.cover p { margin: 0; opacity: .9; font-size: 14px; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0; }
+.kpi { background: #f8efe6; border-radius: 12px; padding: 10px 12px; border-top: 4px solid #7a1f35; }
+.kpi b { display: block; font-size: 22px; color: #7a1f35; line-height: 1.3; }
+.kpi span { font-size: 12px; color: #5c4b4e; }
+.kpi.g { border-top-color: #2f7d4f; } .kpi.g b { color: #2f7d4f; }
+.kpi.o { border-top-color: #c9a063; }
+.box { background: #f8efe6; border-radius: 12px; padding: 10px 16px; margin: 10px 0; }
+.good { background: #eaf5ee; border-left: 5px solid #2f7d4f; }
+.warn { background: #fff3e6; border-left: 5px solid #c9a063; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 12.8px; }
+th { background: #7a1f35; color: #fff; padding: 6px 8px; text-align: left; font-weight: 600; }
+th:first-child { border-radius: 8px 0 0 0; } th:last-child { border-radius: 0 8px 0 0; }
+td { padding: 6px 8px; border-bottom: 1px solid #eadfd6; }
+tr:nth-child(even) td { background: #fcf8f4; }
+.wins { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 10px 0; }
+.win { background: #f8efe6; border-radius: 12px; padding: 10px 14px; border-left: 5px solid #2f7d4f; }
+.win b { display: block; color: #2f7d4f; font-size: 14.5px; }
+.pb { page-break-before: always; }
+.small { font-size: 11.5px; color: #6b5d5f; }
+ul { margin: 4px 0; padding-left: 20px; } li { margin: 3px 0; }
+.chart { margin: 6px 0 4px; break-inside: avoid; }
+table, .box, .kpis, .wins, .keep { break-inside: avoid; }
+.foot { font-size: 11px; color: #9a8f88; margin-top: 18px; border-top: 1px solid #e6dcd3; padding-top: 6px; }
+</style></head><body>
+
+<div class="cover">
+  <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="#fff" stroke-width="2"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#fff" stroke-width="2"/><circle cx="100" cy="100" r="34" fill="#fff"/></svg>
+  <div class="tag">PRIVATE CHOICE BD · TONO HIME</div>
+  <h1>Business Plan &amp; Profit Report</h1>
+  <p>Ad results, prices, profit per order, stock and the road to ৳1–3 lakh profit a month · 22 October 2026</p>
+</div>
+
+<div class="kpis">
+  <div class="kpi"><b>৳1,124</b><span>Ad spend, 18–21 Oct</span></div>
+  <div class="kpi o"><b>101</b><span>Call taps from ads</span></div>
+  <div class="kpi o"><b>8</b><span>Real orders</span></div>
+  <div class="kpi g"><b>৳21,936</b><span>Expected monthly profit at ৳1,000/day</span></div>
+</div>
+
+<h3>Summary</h3>
+<ul>
+<li>In 4 days on a brand-new page, our ads brought <b>101 call taps</b> and <b>8 real orders</b>.</li>
+<li>Cost per call dropped <b>53%</b>, from ৳16.7 on day 1 to about ৳8 on days 3–4.</li>
+<li>Each order costs about <b>৳162</b> in ads (VAT included). A 3-bottle order still leaves <b>৳296</b> profit after that.</li>
+<li>New offer: 1 bottle ৳250 + delivery · 2 bottles ৳550 · 3 bottles ৳899 (free delivery).</li>
+<li>At ৳1,000/day in ads: about <b>213 orders</b>, <b>৳96,208 sales</b> and <b>৳21,936 profit</b> a month.</li>
+<li>Target: <b>৳1 lakh profit/month by month 3</b>, <b>৳3 lakh by month 6</b>.</li>
+</ul>
+
+<h2 class="pb"><span class="n">1</span>Why our ads are winning</h2>
+<div class="kpis">
+  <div class="kpi"><b>৳1,292</b><span>Total spend with VAT</span></div>
+  <div class="kpi o"><b>৳11.1</b><span>Average cost per call</span></div>
+  <div class="kpi g"><b>৳8.6</b><span>ad1 cost per call</span></div>
+  <div class="kpi"><b>৳162</b><span>Ad cost per order</span></div>
+</div>
+<div class="wins">
+  <div class="win"><b>Getting cheaper every day</b>Cost per call fell from ৳16.7 to about ৳8. Facebook is finding the right buyers.</div>
+  <div class="win"><b>We have a clear winner</b>ad1 brings a call for ৳8.6, half the cost of ad2. Facebook now puts almost all the money on it.</div>
+  <div class="win"><b>Calls, not clicks</b>The ad has a "Call now" button. Buyers talk to us directly, which builds trust for a private product.</div>
+  <div class="win"><b>Big room for profit</b>We pay about ৳162 in ads per order. We only start losing money above ~৳265 per order.</div>
+</div>
+<h3>Cost per call, by day</h3>
+<div class="chart"><svg viewBox="0 0 660 182" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter"><text x="110" y="24.76" text-anchor="end" font-size="16" fill="#2b1d1f">18 Oct</text><rect x="120" y="3" width="433.3" height="32" rx="6" fill="#c9787f"/><text x="561.3" y="24.76" font-size="16" font-weight="700" fill="#2b1d1f">৳16.7</text><text x="110" y="68.76" text-anchor="end" font-size="16" fill="#2b1d1f">19 Oct</text><rect x="120" y="47" width="357.6" height="32" rx="6" fill="#c9a063"/><text x="485.6" y="68.76" font-size="16" font-weight="700" fill="#2b1d1f">৳13.8</text><text x="110" y="112.76" text-anchor="end" font-size="16" fill="#2b1d1f">20 Oct</text><rect x="120" y="91" width="203.4" height="32" rx="6" fill="#2f7d4f"/><text x="331.4" y="112.76" font-size="16" font-weight="700" fill="#2b1d1f">৳7.8</text><text x="110" y="156.76" text-anchor="end" font-size="16" fill="#2b1d1f">21 Oct</text><rect x="120" y="135" width="212.6" height="32" rx="6" fill="#2f7d4f"/><text x="340.6" y="156.76" font-size="16" font-weight="700" fill="#2b1d1f">৳8.2</text></svg></div>
+<h3>ad1 vs ad2</h3>
+<div class="chart"><svg viewBox="0 0 660 94" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter"><text x="180" y="24.76" text-anchor="end" font-size="16" fill="#2b1d1f">ad1 · cost per call</text><rect x="190" y="3" width="199.9" height="32" rx="6" fill="#2f7d4f"/><text x="397.9" y="24.76" font-size="16" font-weight="700" fill="#2b1d1f">৳8.6</text><text x="180" y="68.76" text-anchor="end" font-size="16" fill="#2b1d1f">ad2 · cost per call</text><rect x="190" y="47" width="375.0" height="32" rx="6" fill="#c9787f"/><text x="573.0" y="68.76" font-size="16" font-weight="700" fill="#2b1d1f">৳16.1</text></svg></div>
+<table><tr><th>Ad</th><th>Spent</th><th>Call taps</th><th>Cost per call</th></tr>
+<tr><td>ad1 (selfie video)</td><td>৳576</td><td>67</td><td><b>৳8.6</b></td></tr>
+<tr><td>ad2 (selfie video)</td><td>৳548</td><td>34</td><td>৳16.1</td></tr></table>
+<p class="small">Who sees the ads: all of Bangladesh, men and women aged 25–65+. On day 1, 96% of results came from men aged 25–54.
+"Call taps" are counted by Facebook; real connected calls are a bit fewer.</p>
+
+<h2 class="pb"><span class="n">2</span>Product prices — old vs new offer</h2>
+<table><tr><th>Offer</th><th>Old price</th><th>New price</th><th>Customer pays</th><th>Per bottle</th></tr><tr><td>1 bottle</td><td>৳600</td><td><b>৳250</b> + delivery</td><td>৳350</td><td>৳350</td></tr><tr><td>2 bottles</td><td>—</td><td><b>৳550</b> · free delivery</td><td>৳550</td><td>৳275</td></tr><tr><td>3 bottles</td><td>৳1,200</td><td><b>৳899</b> · free delivery</td><td>৳899</td><td>৳300</td></tr></table>
+<div class="box warn"><b>Suggestion:</b> make 2 bottles <b>৳649</b>. Then the price per bottle drops at each step
+(৳350 → ৳325 → ৳300), so more buyers choose 3 bottles, our most profitable order. Today 3 bottles (৳300 each) cost more per bottle than 2 (৳275 each).</div>
+<p class="small">Prices are only given on the phone, never in posts or ads.</p>
+
+<h2><span class="n">3</span>Profit per order</h2>
+<div class="chart"><svg viewBox="0 0 660 202" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter"><line x1="286.0" x2="286.0" y1="0" y2="202" stroke="#9a8f88" stroke-dasharray="4 4"/><text x="228" y="28.12" text-anchor="end" font-size="16" fill="#2b1d1f">1 bottle ৳250 + delivery</text><rect x="246.0" y="5" width="40.0" height="34" rx="6" fill="#b8434f"/><text x="294.0" y="28.12" font-size="16" font-weight="700" fill="#b8434f">−৳42</text><text x="228" y="76.12" text-anchor="end" font-size="16" fill="#2b1d1f">2 bottles ৳550</text><rect x="286.0" y="53" width="64.3" height="34" rx="6" fill="#2f7d4f"/><text x="358.3" y="76.12" font-size="16" font-weight="700" fill="#2f7d4f">৳68</text><text x="228" y="124.12" text-anchor="end" font-size="16" fill="#2b1d1f">2 bottles ৳649 (suggested)</text><rect x="286.0" y="101" width="138.3" height="34" rx="6" fill="#2f7d4f"/><text x="432.3" y="124.12" font-size="16" font-weight="700" fill="#2f7d4f">৳146</text><text x="228" y="172.12" text-anchor="end" font-size="16" fill="#2b1d1f">3 bottles ৳899</text><rect x="286.0" y="149" width="280.0" height="34" rx="6" fill="#2f7d4f"/><text x="574.0" y="172.12" font-size="16" font-weight="700" fill="#2f7d4f">৳296</text></svg></div>
+<table><tr><th>Offer</th><th>Profit if delivered</th><th>Margin</th><th>Average kept (after returns)</th><th>Profit after ads</th></tr><tr><td>1 bottle ৳250 + delivery</td><td>৳176</td><td>71%</td><td>৳119</td><td><b>−৳42</b></td></tr><tr><td>2 bottles ৳550</td><td>৳314</td><td>57%</td><td>৳230</td><td><b>৳68</b></td></tr><tr><td>2 bottles ৳649 (suggested)</td><td>৳413</td><td>64%</td><td>৳308</td><td><b>৳146</b></td></tr><tr><td>3 bottles ৳899</td><td>৳600</td><td>67%</td><td>৳458</td><td><b>৳296</b></td></tr></table>
+<p class="small">"Profit if delivered" = price minus bottles (৳60 each), courier, packaging and COD fee. "Average kept" also counts 1 in 5 parcels coming back.
+"Profit after ads" also takes away ৳162 ad cost per order. The 1-bottle offer brings calls; the profit is in 2 and 3 bottles.</p>
+
+<h2 class="pb"><span class="n">4</span>One month at ৳1,000/day in ads</h2>
+<p>Ad cost for 30 days: ৳30,000 + 15% VAT = <b>৳34,500</b>.</p>
+<table><tr><th>Case</th><th>Ad cost per order</th><th>Orders/day</th><th>Orders/month</th><th>Bottles</th><th>Sales (delivered)</th><th>Profit/month</th></tr><tr><td>Good</td><td>৳130</td><td>8.8</td><td>265</td><td>425</td><td>৳119,890</td><td><b>৳35,828</b></td></tr><tr><td>Expected (today's cost)</td><td>৳162</td><td>7.1</td><td>213</td><td>341</td><td>৳96,208</td><td><b>৳21,936</b></td></tr><tr><td>Bad</td><td>৳200</td><td>5.8</td><td>172</td><td>276</td><td>৳77,929</td><td><b>৳11,213</b></td></tr></table>
+<div class="box good">Expected: about <b>213 orders</b>, <b>341 bottles</b> and <b>৳21,936 profit</b> in the month, after every cost
+(bottles, courier, packaging, returns, ads and VAT).</div>
+<h3>Cash in hand over the month (ramp ৳500 → ৳800 → ৳1,000/day)</h3>
+<div class="chart"><svg viewBox="0 0 660 280" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter"><line x1="70" x2="640" y1="240.0" y2="240.0" stroke="#eadfd6"/><text x="64" y="244.0" text-anchor="end" font-size="12" fill="#9a8f88">−৳4,602</text><line x1="70" x2="640" y1="215.6" y2="215.6" stroke="#eadfd6"/><text x="64" y="219.6" text-anchor="end" font-size="12" fill="#9a8f88">−৳2,301</text><line x1="70" x2="640" y1="191.2" y2="191.2" stroke="#9a8f88"/><text x="64" y="195.2" text-anchor="end" font-size="12" fill="#9a8f88">৳0</text><line x1="70" x2="640" y1="105.6" y2="105.6" stroke="#eadfd6"/><text x="64" y="109.6" text-anchor="end" font-size="12" fill="#9a8f88">৳8,070</text><line x1="70" x2="640" y1="20.0" y2="20.0" stroke="#eadfd6"/><text x="64" y="24.0" text-anchor="end" font-size="12" fill="#9a8f88">৳16,141</text><polygon fill="#c9787f" opacity=".35" points="70.0,191.2 70.0,197.3 89.7,207.0 109.3,219.2 129.0,231.4 148.6,233.6 168.3,229.8 187.9,222.0 207.6,214.2 227.2,206.4 246.9,198.6 266.6,191.2 286.2,191.2 305.9,191.2 325.5,191.2 345.2,191.2 364.8,191.2 384.5,191.2 404.1,191.2 423.8,191.2 443.4,191.2 463.1,191.2 482.8,191.2 502.4,191.2 522.1,191.2 541.7,191.2 561.4,191.2 581.0,191.2 600.7,191.2 620.3,191.2 640.0,191.2 640.0,191.2"/><polygon fill="#2f7d4f" opacity=".3" points="70.0,191.2 70.0,191.2 89.7,191.2 109.3,191.2 129.0,191.2 148.6,191.2 168.3,191.2 187.9,191.2 207.6,191.2 227.2,191.2 246.9,191.2 266.6,190.8 286.2,182.9 305.9,175.1 325.5,167.3 345.2,159.5 364.8,151.7 384.5,143.9 404.1,136.1 423.8,128.3 443.4,120.5 463.1,112.6 482.8,104.8 502.4,97.0 522.1,89.2 541.7,81.4 561.4,73.6 581.0,65.8 600.7,58.0 620.3,50.1 640.0,42.3 640.0,191.2"/><polyline fill="none" stroke="#7a1f35" stroke-width="3.5" points="70.0,197.3 89.7,207.0 109.3,219.2 129.0,231.4 148.6,233.6 168.3,229.8 187.9,222.0 207.6,214.2 227.2,206.4 246.9,198.6 266.6,190.8 286.2,182.9 305.9,175.1 325.5,167.3 345.2,159.5 364.8,151.7 384.5,143.9 404.1,136.1 423.8,128.3 443.4,120.5 463.1,112.6 482.8,104.8 502.4,97.0 522.1,89.2 541.7,81.4 561.4,73.6 581.0,65.8 600.7,58.0 620.3,50.1 640.0,42.3"/><text x="70.0" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 1</text><text x="148.6" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 5</text><text x="246.9" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 10</text><text x="345.2" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 15</text><text x="443.4" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 20</text><text x="541.7" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 25</text><text x="640.0" y="262" text-anchor="middle" font-size="13" fill="#2b1d1f">Day 30</text><circle cx="148.6" cy="233.6" r="6" fill="#b8434f"/><text x="158.6" y="238.6" font-size="14" font-weight="700" fill="#b8434f">Lowest −৳4,002</text><circle cx="640.0" cy="42.3" r="6" fill="#2f7d4f"/><text x="630.0" y="30.3" text-anchor="end" font-size="14" font-weight="700" fill="#2f7d4f">Cash at month end ৳14,035</text></svg></div>
+<p class="small">Ads are paid on the same day, courier money comes about 4 days later. So cash dips to about −৳4,002 first,
+is back to zero around day 11, then grows about ৳737 a day. The ads pay for themselves from sales after that —
+about ৳4,002 is needed once to start, taken from the first orders' courier money.</p>
+
+<h2 class="pb"><span class="n">5</span>Stock</h2>
+<table><tr><th>Orders per day</th><th>Bottles per day (avg 2/order)</th><th>100 bottles last</th></tr><tr><td>3</td><td>6</td><td>17 days</td></tr><tr><td>5</td><td>10</td><td>10 days</td></tr><tr><td>8</td><td>16</td><td>6 days</td></tr><tr><td>10</td><td>20</td><td>5 days</td></tr><tr><td>15</td><td>30</td><td>3 days</td></tr></table>
+<div class="box warn">We have <b>50 bottles</b> now. At ৳1,000/day we use about 14 bottles a day, so stock lasts 3–4 days.
+We need <b>100 more bottles (about ৳6,000)</b> by day 3, and always 2 weeks of stock in hand after that.</div>
+
+<h2><span class="n">6</span>Roadmap — ৳1 lakh to ৳3 lakh profit a month</h2>
+<div class="chart"><svg viewBox="0 0 660 300" width="100%" xmlns="http://www.w3.org/2000/svg" style="font-family:Inter"><rect x="42.3" y="235.7" width="79.4" height="14.3" rx="8" fill="#c9787f"/><text x="82.0" y="227.7" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">৳21,936</text><text x="82.0" y="274" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">Month 1</text><rect x="166.3" y="217.5" width="79.4" height="32.5" rx="8" fill="#c9a063"/><text x="206.0" y="209.5" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">৳50,000</text><text x="206.0" y="274" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">Month 2</text><rect x="290.3" y="185.0" width="79.4" height="65.0" rx="8" fill="#94324a"/><text x="330.0" y="177.0" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">৳100,000</text><text x="330.0" y="274" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">Month 3</text><rect x="414.3" y="120.1" width="79.4" height="129.9" rx="8" fill="#7a1f35"/><text x="454.0" y="112.1" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">৳200,000</text><text x="454.0" y="274" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">Month 4–5</text><rect x="538.3" y="55.1" width="79.4" height="194.9" rx="8" fill="#2f7d4f"/><text x="578.0" y="47.1" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">৳300,000</text><text x="578.0" y="274" text-anchor="middle" font-size="15" font-weight="700" fill="#2b1d1f">Month 6</text></svg></div>
+<div class="keep"><table><tr><th>Stage</th><th>Profit/month</th><th>Orders/day</th><th>Ads/day (before VAT)</th><th>Bottles/month</th><th>Sales/month</th></tr><tr><td><b>Month 1</b></td><td><b>৳21,936</b></td><td>7</td><td>৳1,000</td><td>341</td><td>৳96,208</td></tr><tr><td><b>Month 2</b></td><td><b>৳50,000</b></td><td>11</td><td>৳1,634</td><td>570</td><td>৳172,208</td></tr><tr><td><b>Month 3</b></td><td><b>৳100,000</b></td><td>18</td><td>৳2,841</td><td>1,002</td><td>৳302,407</td></tr><tr><td><b>Month 4–5</b></td><td><b>৳200,000</b></td><td>38</td><td>৳6,343</td><td>2,119</td><td>৳639,645</td></tr><tr><td><b>Month 6</b></td><td><b>৳300,000</b></td><td>61</td><td>৳10,627</td><td>3,373</td><td>৳1,018,098</td></tr></table></div>
+<table><tr><th>Stage</th><th>What it takes</th></tr>
+<tr><td><b>Month 1</b></td><td>৳1,000/day ads. 2 bottles at ৳649. 8–15 new videos in the ad1 style.</td></tr>
+<tr><td><b>Month 2</b></td><td>40% of orders as 3 bottles. Next-day payment from the courier.</td></tr>
+<tr><td><b>Month 3 · ৳1 lakh</b></td><td>Buy 1,000+ bottles at once to get ৳50 per bottle. Half of orders as 3 bottles. 1 extra person on calls.</td></tr>
+<tr><td><b>Month 4–5 · ৳2 lakh</b></td><td>2–3 people on calls, orders on WhatsApp and Messenger too. Launch a 2nd product.</td></tr>
+<tr><td><b>Month 6 · ৳3 lakh</b></td><td>2–3 products, 3–4 callers, better courier rates.</td></tr>
+</table>
+<p class="small">These are targets, not promises. We move to the next stage only when the numbers hold. Ad cost per order is expected to rise
+from ৳162 to about ৳200 as we spend more — that is already counted.</p>
+
+<h3>Numbers we assumed</h3>
+<ul class="small">
+<li>Bottle ৳60 (৳50 from month 3) · courier ৳100 (paid even on returns) · packaging ৳10 · COD fee 1% · VAT 15% on ads.</li>
+<li>1 in 5 parcels returned (20%) — a common figure for cash on delivery in Bangladesh; we will replace it with our own number.</li>
+<li>Order mix: 30% 1 bottle, 40% 2 bottles, 30% 3 bottles (20/30/50 from month 3). The 1-bottle buyer pays about ৳100 delivery.</li>
+<li>Ad results are real (Meta Ads Manager, 18–21 Oct 2026). Order count: 8 real orders.</li>
+</ul>
+<div class="foot">Private Choice BD · prepared 22 October 2026 · internal — do not share publicly</div>
+</body></html>

@@ -1,0 +1,32 @@
+{% extends "posters/_base.html" %}
+{# Bold split: dark brand side with floating product copies + white band with stacked headline (ref: "Crystal Clear") #}
+{% block style %}
+body{background:radial-gradient(90% 70% at 70% 45%, var(--p) 0%, var(--d) 75%)}
+.band{left:{{ (W*0.07)|int }}px;top:0;width:{{ (W*0.40)|int }}px;height:100%;background:#fff;border-radius:0 0 {{ (W*0.2)|int }}px {{ (W*0.2)|int }}px}
+.band:after{content:"";position:absolute;left:0;right:0;top:58%;height:42%;background:var(--l);border-radius:{{ (W*0.2)|int }}px {{ (W*0.2)|int }}px {{ (W*0.2)|int }}px {{ (W*0.2)|int }}px;opacity:.0}
+.head{left:{{ (W*0.07)|int }}px;width:{{ (W*0.40)|int }}px;top:{{ (H*0.07)|int }}px;text-align:center;padding:0 26px;color:var(--d);
+  font-weight:800;font-size:{{ 92 if (headline|length) < 14 else 76 }}px;line-height:1.08;letter-spacing:-1px}
+.float{opacity:.9}
+.f1{right:-60px;top:{{ (H*0.05)|int }}px;width:{{ (W*0.20)|int }}px;transform:rotate(24deg);filter:blur(5px)}
+.f2{right:{{ (W*0.12)|int }}px;top:{{ (H*0.33)|int }}px;width:{{ (W*0.12)|int }}px;transform:rotate(-18deg);filter:blur(2px)}
+.f3{right:-30px;bottom:{{ (H*0.10)|int }}px;width:{{ (W*0.18)|int }}px;transform:rotate(-30deg);filter:blur(4px)}
+.f4{left:{{ (W*0.46)|int }}px;bottom:-60px;width:{{ (W*0.22)|int }}px;transform:rotate(14deg);filter:blur(7px);opacity:.75}
+.hero{left:{{ (W*0.30)|int }}px;top:{{ (H*0.33)|int }}px;width:{{ (W*0.62)|int }}px;height:{{ (H*0.50)|int }}px;object-fit:contain;transform:rotate(-12deg)}
+.cta{left:{{ (W*0.07)|int }}px;width:{{ (W*0.40)|int }}px;bottom:{{ (H*0.06)|int }}px;text-align:center;color:var(--d)}
+.cta .arrow{font-size:54px;line-height:1;color:var(--d)}
+.cta .t1{font-weight:800;font-size:46px;line-height:1.15;margin-top:6px}
+.cta .t2{font-family:'Poppins';font-weight:800;font-size:40px;letter-spacing:.5px;margin-top:6px}
+.badge{right:{{ (W*0.05)|int }}px;bottom:{{ (H*0.045)|int }}px;background:var(--a);color:#111;padding:14px 30px;font-size:34px}
+.page{right:{{ (W*0.05)|int }}px;top:{{ (H*0.04)|int }}px;color:rgba(255,255,255,.85);font-weight:600;font-size:30px;letter-spacing:.5px}
+{% endblock %}
+{% block body %}
+<div class="abs band"></div>
+{% set cuts = cutouts or [product] %}
+<img class="abs float f1" src="{{ cuts[1 % cuts|length]|img }}"><img class="abs float f2" src="{{ cuts[2 % cuts|length]|img }}">
+<img class="abs float f3" src="{{ cuts[0]|img }}"><img class="abs float f4" src="{{ cuts[1 % cuts|length]|img }}">
+<div class="abs head">{{ headline }}</div>
+<img class="abs hero shadow" src="{{ product|img }}">
+<div class="abs cta"><div class="arrow">︽</div><div class="t1">{{ cta }}</div>{% if phone %}<div class="t2">{{ phone }}</div>{% endif %}</div>
+{% if page %}<div class="abs page">{{ page }}</div>{% endif %}
+{% if badge %}<div class="abs pill badge">{{ badge }}</div>{% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+# secrets
+.env
+**/.env
+
+# heavy / regenerable
+.venv/
+.cache/
+__pycache__/
+*.pyc
+node_modules/
+products/*/work/
+studio/products/*/work/
+*.zip
